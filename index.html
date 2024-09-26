@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="./output.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/cly7pvd.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="w-full h-[96px]">
+      <div
+        class="bg-BLACK bg-opacity-75 backdrop-blur-md px-4 h-[96px] w-full fixed top-0 left-0 right-0 z-[99999]"
+      >
+        <div
+          class="max-w-[1248px] md:px-4 h-[96px] mx-auto w-full flex items-center justify-between gap-12"
+        >
+          <div
+            class="w-full md:w-auto flex items-center justify-between gap-12"
+          >
+            <a class="flex items-center gap-[2.87px] group" href="">
+              <svg
+                width="31"
+                height="32"
+                viewBox="0 0 31 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="text-BLUE_PRIMARY group-hover:text-WHITE transition-all logomark-animation"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.9274 10.8001H19.8382C19.9994 10.8001 20.1501 10.8392 20.2832 10.9101C20.1466 10.5234 19.7822 10.2466 19.3547 10.2466H16.4046L12.137 5.92509C11.4783 5.23322 11.5413 4.30008 12.2211 3.59756L15.378 0.397204C15.9035 -0.135006 16.7619 -0.135006 17.2875 0.397204L30.6087 13.8869C31.1343 14.4192 31.1343 15.2884 30.6087 15.8206L17.2875 29.3104C16.7619 29.8426 15.9035 29.8426 15.378 29.3104L14.0115 27.9266L20.2552 21.604C20.7807 21.0718 20.7807 20.2025 20.2552 19.6703L18.3982 17.7898L20.1746 15.991C20.7001 15.4587 20.7001 14.5895 20.1746 14.0573L18.9272 12.7941H13.9274C13.3843 12.7941 12.9428 12.3435 12.9428 11.7971C12.9428 11.2472 13.3878 10.8001 13.9274 10.8001ZM3.56682 12.0987C3.04826 12.6345 3.00271 13.3441 3.50375 13.8728L4.3026 14.6817H6.32777C6.75523 14.6817 7.12312 14.962 7.25626 15.3488C7.14414 15.3026 7.02151 15.2778 6.89538 15.2778H0.984553C0.441472 15.2778 0 15.7284 0 16.2748C0 16.8247 0.444976 17.2718 0.984553 17.2718H6.86384L9.6248 20.0677C10.0242 20.4722 10.0242 21.1356 9.6248 21.5401L3.62638 27.6144C3.15337 28.0757 3.0833 28.6859 3.51776 29.2075L5.97039 31.6911C6.36982 32.0956 7.02502 32.0956 7.42444 31.6911L17.5783 21.4088C17.9777 21.0044 17.9777 20.3409 17.5783 19.9364L7.42444 9.65411C7.02502 9.24963 6.36982 9.24963 5.97039 9.65411L3.56331 12.0916L3.56682 12.0987ZM4.62144 18.3611H6.59405C7.13714 18.3611 7.57861 18.8117 7.57861 19.3581C7.57861 19.908 7.13363 20.3551 6.59405 20.3551H4.62144C4.07836 20.3551 3.63689 19.9045 3.63689 19.3581C3.63689 18.8081 4.08187 18.3611 4.62144 18.3611ZM10.2485 8.09296C9.70538 8.09296 9.26391 8.54356 9.26391 9.08996C9.26391 9.63991 9.70889 10.087 10.2485 10.087H12.659C13.2021 10.087 13.6436 9.63637 13.6436 9.08996C13.6436 8.54001 13.1986 8.09296 12.659 8.09296H10.2485Z"
+                  fill="currentColor"
+                />
+              </svg>
+
+              <svg
+                width="60"
+                height="23"
+                viewBox="0 0 60 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="text-WHITE logotext-animation"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M38.5885 22.245C38.3608 22.245 38.1786 22.1917 38.0454 22.0853C37.9123 21.9788 37.8457 21.8405 37.8457 21.6666C37.8457 21.5495 37.8948 21.397 37.9894 21.2018L48.3219 1.5207C48.4936 1.21202 48.6933 1.05591 48.9246 1.05591C49.1908 1.05591 49.3906 1.21202 49.5272 1.5207L59.8598 21.2018C59.9544 21.3934 60.0034 21.5495 60.0034 21.6666C60.0034 21.8405 59.9368 21.9824 59.8037 22.0853C59.6706 22.1917 59.4884 22.245 59.2606 22.245H56.1423C55.7043 22.245 55.368 22.0321 55.1402 21.6063L48.9281 9.54643L46.2652 15.0814H51.2125L44.0298 18.9949L42.7404 21.6028C42.5512 22.0285 42.2149 22.2414 41.7384 22.2414H38.5885V22.245Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M39.0966 21.3757C39.0966 21.6453 39.0195 21.8582 38.8688 22.0143C38.7147 22.1704 38.508 22.245 38.2382 22.245H35.4317C35.1654 22.245 34.9551 22.1669 34.801 22.0143C34.6468 21.8582 34.5732 21.6489 34.5732 21.3757V1.92518C34.5732 1.65553 34.6503 1.44265 34.801 1.28653C34.9551 1.13042 35.1619 1.05591 35.4317 1.05591H38.2382C38.5045 1.05591 38.7147 1.13397 38.8688 1.28653C39.023 1.4391 39.0966 1.65198 39.0966 1.92518V21.3757Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.9902 1.92518C17.9902 1.65553 18.0673 1.44265 18.218 1.28653C18.3721 1.13042 18.5789 1.05591 18.8487 1.05591H26.4903C28.1686 1.05591 29.6472 1.38588 30.9261 2.04227C32.2049 2.69866 33.1965 3.61761 33.9043 4.79557C34.591 5.95579 34.9344 7.24019 34.9344 8.65232C34.9344 10.0644 34.6085 11.3524 33.9603 12.4629C33.3121 13.5735 32.3591 14.4499 31.0978 15.085C29.8189 15.7414 28.2737 16.0713 26.4623 16.0713H22.5136V21.3757C22.5136 21.6453 22.4365 21.8582 22.2858 22.0143C22.1317 22.1704 21.9249 22.245 21.6552 22.245H18.8487C18.5824 22.245 18.3721 22.1669 18.218 22.0143C18.0638 21.8582 17.9902 21.6489 17.9902 21.3757V1.92518ZM27.121 12.0975C28.1511 12.0975 28.9535 11.7675 29.5246 11.1111C30.0957 10.4547 30.383 9.63158 30.383 8.64877C30.383 8.01012 30.2393 7.42114 29.952 6.88183C29.6647 6.34253 29.2443 5.89547 28.6942 5.54776C28.1231 5.20005 27.4433 5.02619 26.662 5.02619H22.5101V12.0975H27.1175H27.121Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.24892 19.8677C1.00016 19.6761 0.877528 19.4526 0.877528 19.2007C0.877528 19.0268 0.944099 18.8423 1.07724 18.6508L2.50677 16.5645C2.66093 16.2948 2.86766 16.16 3.13744 16.16C3.30913 16.16 3.49132 16.2274 3.68053 16.3623C4.57749 16.9796 5.61109 17.4976 6.78485 17.9128C7.9586 18.3279 9.02374 18.5372 9.97676 18.5372C11.14 18.5372 12.0755 18.3101 12.7833 17.856C13.491 17.4018 13.8414 16.8448 13.8414 16.1884C13.8414 15.2411 13.1161 14.5634 11.6656 14.1589L9.17441 13.6373C7.53465 13.3677 6.1822 13.0377 5.12407 12.651C4.06594 12.2642 3.11642 11.6575 2.27552 10.8237C1.34002 9.93316 0.874023 8.70907 0.874023 7.14083C0.874023 4.99425 1.65185 3.39052 3.20752 2.32965C4.76318 1.26523 6.75331 0.736572 9.17441 0.736572C10.681 0.736572 12.0265 0.924619 13.2107 1.30071C14.395 1.67681 15.5687 2.26224 16.732 3.05346C16.9983 3.24505 17.1314 3.46858 17.1314 3.72049C17.1314 3.93338 17.0648 4.11788 16.9317 4.27044L15.4146 6.35671C15.2429 6.62636 15.0327 6.76119 14.7839 6.76119C14.5947 6.76119 14.402 6.69377 14.2128 6.55895C13.3719 6.01609 12.51 5.60097 11.6235 5.31358C10.7371 5.02263 9.86464 4.87716 9.00272 4.87716C8.01116 4.87716 7.15975 5.05102 6.4555 5.39873C5.74774 5.74644 5.39736 6.26801 5.39736 6.96343C5.39736 7.38919 5.57956 7.74755 5.94044 8.03494C6.30133 8.32588 6.74981 8.53877 7.28588 8.67359C7.66779 8.79068 8.4211 8.97163 9.5458 9.22354L10.5759 9.42578C12.3523 9.77349 13.7258 10.1389 14.6963 10.5257C15.6704 10.9124 16.5078 11.5191 17.2155 12.3529C17.9793 13.24 18.3612 14.4782 18.3612 16.0642C18.3612 18.1718 17.6219 19.7932 16.1434 20.9322C14.6648 22.0711 12.6291 22.6423 10.0328 22.6423C6.57813 22.6423 3.64899 21.7163 1.24542 19.8606L1.24892 19.8677Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <button class="md:hidden">
+              <iconify-icon
+                class="text-head24 text-WHITE"
+                icon="mdi:menu"
+              ></iconify-icon>
+            </button>
+          </div>
+          <div
+            class="hidden md:flex w-full h-full items-center gap-12 justify-between"
+          >
+            <div class="h-full flex items-center">
+              <ul class="flex items-stretch gap-6 h-full">
+                <li class="h-full flex items-center">
+                  <a
+                    class="font-HEAD font-thin text-body18 text-WHITE hover:text-opacity-25 transition-all h-full flex items-center"
+                    href="#soluções"
+                    >Soluções</a
+                  >
+                </li>
+                <li class="h-full flex items-center">
+                  <a
+                    class="font-HEAD font-thin text-body18 text-WHITE hover:text-opacity-25 transition-all h-full flex items-center"
+                    href="#cases"
+                    >Cases</a
+                  >
+                </li>
+                <li class="h-full flex items-center">
+                  <a
+                    class="font-HEAD font-thin text-body18 text-WHITE hover:text-opacity-25 transition-all h-full flex items-center"
+                    href="#planos"
+                    >Planos</a
+                  >
+                </li>
+                <li class="h-full flex items-center">
+                  <a
+                    class="font-HEAD font-thin text-body18 text-WHITE hover:text-opacity-25 transition-all h-full flex items-center"
+                    href="#sobre-nós"
+                    >Sobre Nós</a
+                  >
+                </li>
+                <li class="h-full flex items-center">
+                  <a
+                    class="font-HEAD font-thin text-body18 text-WHITE hover:text-opacity-25 transition-all h-full flex items-center"
+                    href="#fale-com-a-gente"
+                    >Fale com a gente</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center gap-4">
+              <button
+                class="flex items-center gap-2 px-4 h-[48px] border border-WHITE border-opacity-5 text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:bg-WHITE hover:bg-opacity-5 transition-all"
+              >
+                Acessar
+                <iconify-icon
+                  class="text-head16 text-WHITE"
+                  icon="solar:user-circle-linear"
+                ></iconify-icon>
+              </button>
+              <button
+                class="px-4 h-[48px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:opacity-85 hover:bg-BLUE_HOVER transition-all"
+              >
+                Falar com especialista
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main
+      class="max-w-[1248px] px-4 mx-auto w-full h-[calc(100vh_-_96px)] flex flex-col justify-center items-center bg-BLACK"
+    >
+      <div class="max-w-[712px] mx-auto w-full flex flex-col items-center">
+        <div
+          class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
+        >
+          <iconify-icon
+            class="text-body18 text-BLUE_PRIMARY"
+            icon="solar:map-arrow-up-bold"
+          ></iconify-icon>
+          <p class="uppercase font-BODY text-WHITE text-body16">
+            A SPIA RESOLVE
+          </p>
+        </div>
+        <h1
+          class="text-center font-HEAD text-head48 text-WHITE leading-tight font-light"
+        >
+          Preços de frete voláteis?
+        </h1>
+        <p
+          class="text-center font-BODY font-normal text-head24 text-WHITE mt-4 max-w-[496px]"
+        >
+          Agora você pode ter previsões certeiras para planejar suas operações
+          sem sustos.
+        </p>
+        <div class="flex justify-center w-full mt-12">
+          <button
+            class="w-full md:w-auto px-8 h-[64px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body16 rounded-[4px] hover:bg-BLUE_HOVER transition-all"
+          >
+            Falar com especialista
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="w-full flex flex-col md:flex-row items-center gap-8 h-[256px] rounded-lg mt-[128px]"
+      >
+        <div
+          class="flex flex-col rounded-xl border border-WHITE border-opacity-5 max-w-[488px] w-full h-[256px] hover:border-opacity-10 transition-all hover:scale-105 overflow-hidden"
+        >
+          <div class="p-6 flex-1">
+            <div class="flex items-center gap-2">
+              <img src="./assets/logomark.svg" alt="" />
+              <p class="font-HEAD text-body18 text-WHITE font-thin">
+                Precificação feita por Inteligência Artificial
+              </p>
+            </div>
+            <div class="mt-6 flex items-center justify-between gap-4">
+              <div class="flex flex-col gap-1">
+                <span
+                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
+                  >Ponto de origem</span
+                >
+                <p class="font-BODY text-WHITE text-body14 font-light">
+                  Belo Horizonte - MG
+                </p>
+              </div>
+              <div class="flex flex-col gap-1">
+                <span
+                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
+                  >Ponto de origem</span
+                >
+                <p class="font-BODY text-WHITE text-body14 font-light">
+                  Belo Horizonte - MG
+                </p>
+              </div>
+              <div class="flex flex-col gap-1">
+                <span
+                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
+                  >Peso (t)</span
+                >
+                <p class="font-BODY text-WHITE text-body14 font-light">
+                  3 Toneladas
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="px-6 flex-1 bg-WHITE bg-opacity-5 flex items-center w-full"
+          >
+            <div class="flex items-center justify-between gap-4 w-full">
+              <div class="flex flex-col gap-1">
+                <span
+                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
+                  >Distância (Km)</span
+                >
+                <p class="font-BODY text-WHITE text-body14 font-light">
+                  1.271Km
+                </p>
+              </div>
+              <div class="flex flex-col gap-1">
+                <span
+                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
+                  >Tempo estimado</span
+                >
+                <p class="font-BODY text-WHITE text-body14 font-light">
+                  16h14min
+                </p>
+              </div>
+              <div class="flex flex-col gap-1">
+                <span
+                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
+                  >Valor (P/t)</span
+                >
+                <p class="font-BODY text-WHITE text-body14 font-light">
+                  R$ 192
+                  <span class="text-sm12 text-WHITE text-opacity-45"
+                    >/tonelada</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="overflow-hidden flex items-stretch max-w-[696px] rounded-lg border border-WHITE border-opacity-5 bg-opacity-5 w-full h-[256px] hover:border-opacity-10 transition-all hover:scale-105"
+        >
+          <div class="bg-WHITE bg-opacity-5 w-full h-[256px]">
+            <div class="pointer-events-none w-full relative h-[256px]">
+              <img
+                src="./assets/florianopolis-to-belo-horizonte-map.svg"
+                alt=""
+              />
+              <div
+                class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-[#111111] to-[#11111100]"
+              >
+                <div>
+                  <span
+                    class="font-BODY text-WHITE text-sm12 font-normal uppercase"
+                    >Valor (R$)</span
+                  >
+                  <div class="flex items-center gap-3">
+                    <span class="font-BODY text-head32 text-WHITE font-medium"
+                      >R$</span
+                    >
+                    <p class="font-BODY text-head32 text-WHITE font-light">
+                      10.500,00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full p-6 h-[256px]">
+            <div class="flex flex-col w-full relative overflow-hidden">
+              <div>
+                <p class="font-BODY text-WHITE font-light text-body18">
+                  Predição dos próximos 90 dias
+                </p>
+                <span
+                  class="font-BODY text-WHITE text-opacity-45 font-light text-body14"
+                  >Baseada em dados reais</span
+                >
+              </div>
+              <div>
+                <img src="./assets/chart-tendencia.svg" alt="" srcset="" />
+              </div>
+              <div
+                class="flex items-center gap-4 absolute w-full bg-WHITE bg-opacity-5 bottom-0 backdrop-blur-sm rounded-[4px] overflow-hidden"
+              >
+                <div
+                  class="h-[64px] w-[64px] bg-BLUE_PRIMARY grid place-content-center shrink-0"
+                >
+                  <iconify-icon
+                    class="text-head24 text-WHITE"
+                    icon="solar:chat-round-money-linear"
+                  ></iconify-icon>
+                </div>
+                <div>
+                  <p class="font-BODY text-WHITE text-body14 font-normal">
+                    Tendência de <b>aumento</b>
+                  </p>
+                  <span
+                    class="font-BODY text-WHITE text-opacity-45 text-sm12 font-light"
+                    >Previsão aumento nos próximos 7 dias</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="max-w-[1248px] w-full px-4 mx-auto pt-[84px] pb-[124px]">
+      <div class="w-full grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-0 hover:border-opacity-5"
+        >
+          <div class="w-full flex items-center justify-center gap-3">
+            <iconify-icon
+              class="text-head24 text-BLUE_PRIMARY"
+              icon="solar:map-linear"
+            ></iconify-icon>
+            <h2 class="font-BODY text-head24 text-WHITE font-normal">
+              +31 Milhões de rotas
+            </h2>
+          </div>
+          <p
+            class="font-BODY text-body18 text-WHITE font-light mt-4 text-center"
+          >
+            Mais de 5 mil opções de origem e destinos para cotação.
+          </p>
+        </div>
+        <div
+          class="bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-0 hover:border-opacity-5"
+        >
+          <div class="w-full flex items-center justify-center gap-3">
+            <iconify-icon
+              class="text-head24 text-BLUE_PRIMARY"
+              icon="solar:compass-linear"
+            ></iconify-icon>
+            <h2 class="font-BODY text-head24 text-WHITE font-normal">
+              +96% de precisão
+            </h2>
+          </div>
+          <p
+            class="font-BODY text-body18 text-WHITE font-light mt-4 text-center"
+          >
+            Termômetro do último preço executado do mercado nos últimos 12 meses
+          </p>
+        </div>
+        <div
+          class="bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-0 hover:border-opacity-5"
+        >
+          <div class="w-full flex items-center justify-center gap-3">
+            <iconify-icon
+              class="text-head24 text-BLUE_PRIMARY"
+              icon="solar:routing-2-linear"
+            ></iconify-icon>
+            <h2 class="font-BODY text-head24 text-WHITE font-normal">
+              24/7 Disponível
+            </h2>
+          </div>
+          <p
+            class="font-BODY text-body18 text-WHITE font-light mt-4 text-center"
+          >
+            Predição para os próximos 90 dias.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="soluções" class="bg-GRAY_800">
+      <div class="max-w-[1248px] mx-auto w-full px-4 py-[124px]">
+        <div class="flex flex-col items-start">
+          <h1 class="font-HEAD text-head40 text-WHITE font-light">
+            Nossa solução
+          </h1>
+          <p class="font-BODY font-light text-head24 text-WHITE mt-4">
+            A SPIA utiliza inteligência artificial com modelos matemáticos
+            proprietários de grande escala composta com variáveis que permite
+            precificar a tendência do preço futuro do frete.
+          </p>
+        </div>
+        <div class="md:flex items-center mt-8 hidden">
+          <button
+            data-query="fretes"
+            class="button-card button-card-fretes flex items-center justify-center w-full h-[72px] group transition-all cursor-pointer border-b-[1px] px-6 border-WHITE border-opacity-5 hover:bg-WHITE hover:bg-opacity-5"
+          >
+            <p
+              class="pointer-events-none group-hover:text-opacity-25 transition-all font-HEAD text-head24 text-WHITE leading-thin font-thin text-opacity-25"
+            >
+              Predição do preço futuro do frete
+            </p>
+          </button>
+          <button
+            data-query="veiculos"
+            class="button-card button-card-veiculos flex items-center justify-center w-full h-[72px] group transition-all cursor-pointer border-b-[1px] px-6 border-WHITE border-opacity-5 hover:bg-WHITE hover:bg-opacity-5"
+          >
+            <p
+              class="pointer-events-none group-hover:text-opacity-25 transition-all font-HEAD text-head24 text-WHITE leading-tight font-thin text-opacity-25"
+            >
+              Projeção de demandas de veículos com IA
+            </p>
+          </button>
+        </div>
+
+        <div
+          class="card card-fretes w-full border-WHITE bg-GRAY_800 rounded-lg overflow-hidden mt-16 md:p-14 bg-bg-preco-futuro-do-frete bg-cover"
+        >
+          <img
+            class="md:hidden h-[216px] w-full object-cover"
+            src="./assets/preco-futuro-do-frete-mob.png"
+            alt=""
+            srcset=""
+          />
+          <div class="flex flex-col justify-between md:h-[460px] py-8 px-6">
+            <div>
+              <div
+                class="h-[2px] w-12 bg-gradient-to-r from-BLUE_PRIMARY to-GRAY_700"
+              ></div>
+              <h6
+                class="uppercase font-HEAD text-WHITE font-thin tracking-[0.2em] mt-2"
+              >
+                PREDIÇÃO DO <b>PREÇO FUTURO DO FRETE</b>
+              </h6>
+              <div class="flex flex-col gap-4 max-w-[570px] mt-6">
+                <p class="font-BODY text-body18 text-WHITE font-light">
+                  Nossa solução de predição de preço futuro do frete utiliza
+                  inteligência artificial para fornecer previsões altamente
+                  precisas e confiáveis, permitindo que empresas otimizem sua
+                  logística e tomem decisões estratégicas com base em dados
+                  concretos.
+                </p>
+                <p class="font-BODY text-body18 text-WHITE font-light">
+                  Através da análise de grandes volumes de dados históricos e em
+                  tempo real, nossa ferramenta é capaz de antecipar variações do
+                  preço do frete, oferecendo previsões para os próximos 90 dias
+                  com até 96% de precisão.
+                </p>
+              </div>
+            </div>
+            <div>
+              <a
+                class="flex items-center gap-2 font-BODY text-body18 text-WHITE font-light mt-6 hover:gap-6 transition-all"
+                href=""
+              >
+                Quero saber mais sobre
+                <iconify-icon
+                  class="text-sm14 text-WHITE"
+                  icon="solar:alt-arrow-right-line-duotone"
+                ></iconify-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-veiculos w-full bg-GRAY_800 rounded-lg overflow-hidden mt-16 md:p-14 bg-bg-demandas-de-veiculos-com-ia bg-cover"
+        >
+          <img
+            class="md:hidden h-[216px] w-full object-cover"
+            src="./assets/demandas-de-veiculos-com-ia-mob.png"
+            alt=""
+            srcset=""
+          />
+          <div class="flex flex-col justify-between md:h-[460px] py-8 px-6">
+            <div>
+              <div
+                class="h-[2px] w-12 bg-gradient-to-r from-BLUE_PRIMARY to-GRAY_700"
+              ></div>
+              <h6
+                class="uppercase font-HEAD text-WHITE font-thin tracking-[0.2em] mt-2"
+              >
+                Projeção de Demandas de <b>Veículos com IA</b>
+              </h6>
+              <div class="flex flex-col gap-4 max-w-[570px] mt-6">
+                <p class="font-BODY text-body18 text-WHITE font-light">
+                  Utilize inteligência artificial para prever com precisão a
+                  demanda futura de veículos, otimizar sua frota e tomar
+                  decisões estratégicas mais assertivas.
+                </p>
+                <p class="font-BODY text-body18 text-WHITE font-light">
+                  Com base em dados históricos e padrões de mercado, a IA
+                  fornece insights que ajudam a antecipar necessidades,
+                  reduzindo custos e aumentando a eficiência operacional.
+                </p>
+              </div>
+            </div>
+            <div>
+              <a
+                class="flex items-center gap-2 font-BODY text-body18 text-WHITE font-light mt-6 hover:gap-6 transition-all"
+                href=""
+              >
+                Quero saber mais sobre
+                <iconify-icon
+                  class="text-sm14 text-WHITE"
+                  icon="solar:alt-arrow-right-line-duotone"
+                ></iconify-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-GRAY_600 py-[124px]">
+      <div class="max-w-[1248px] mx-auto px-4">
+        <div class="flex flex-col items-start">
+          <div
+            class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
+          >
+            <iconify-icon
+              class="text-body18 text-BLUE_PRIMARY"
+              icon="solar:money-bag-linear"
+            ></iconify-icon>
+            <p class="uppercase font-BODY text-WHITE text-body16">BENEFÍCIOS</p>
+          </div>
+          <h1 class="font-HEAD text-head40 text-WHITE font-thin">
+            Nossos benefícios
+          </h1>
+        </div>
+      </div>
+      <div class="margin-container-left mt-16 px-4 md:px-0">
+        <div class="swiper h-[240px] w-full relative">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide w-full p-8 rounded-lg border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10 transition-all"
+            >
+              <iconify-icon
+                class="text-body18 text-WHITE"
+                icon="ph:shield-check-fill"
+              ></iconify-icon>
+              <h6 class="font-HEAD font-normal text-head24 text-WHITE mt-4">
+                Precisão e Confiabilidade
+              </h6>
+              <p class="font-BODY font-light text-body16 text-WHITE mt-2">
+                Previsões detalhadas que permitem ajustar suas estratégias de
+                logística de forma assertiva.
+              </p>
+            </div>
+            <div
+              class="swiper-slide w-full p-8 rounded-lg border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10 transition-all"
+            >
+              <iconify-icon
+                class="text-body18 text-WHITE"
+                icon="solar:chart-2-bold"
+              ></iconify-icon>
+              <h6 class="font-HEAD font-normal text-head24 text-WHITE mt-4">
+                Redução de risco
+              </h6>
+              <p class="font-BODY font-light text-body16 text-WHITE mt-2">
+                Evite surpresas nos custos de frete, garantindo uma gestão mais
+                eficiente e previsível.
+              </p>
+            </div>
+            <div
+              class="swiper-slide w-full p-8 rounded-lg border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10 transition-all"
+            >
+              <iconify-icon
+                class="text-body18 text-WHITE"
+                icon="solar:point-on-map-perspective-bold"
+              ></iconify-icon>
+              <h6 class="font-HEAD font-normal text-head24 text-WHITE mt-4">
+                Planejamento Estratégico
+              </h6>
+              <p class="font-BODY font-light text-body16 text-WHITE mt-2">
+                Tome decisões informadas, ajustando suas operações de acordo com
+                as tendências de mercado e demandas futuras.
+              </p>
+            </div>
+            <div
+              class="swiper-slide w-full p-8 rounded-lg border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10 transition-all"
+            >
+              <iconify-icon
+                class="text-body18 text-WHITE"
+                icon="solar:smartphone-2-bold"
+              ></iconify-icon>
+              <h6 class="font-HEAD font-normal text-head24 text-WHITE mt-4">
+                Facilidade de implementação
+              </h6>
+              <p class="font-BODY font-light text-body16 text-WHITE mt-2">
+                Nossa solução se integra facilmente aos seus sistemas,
+                utilizando o seu banco de dados para gerar previsões
+                personalizadas.
+              </p>
+            </div>
+            <div class="swiper-slide"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="bg-GRAY_600">
+      <div class="max-w-[1248px] mx-auto w-full px-4 py-14">
+        <div class="w-full flex flex-col md:flex-row items-start gap-12">
+          <div class="max-w-[348px] w-full">
+            <h4
+              class="font-HEAD text-head48 text-WHITE font-thin leading-tight"
+            >
+              Quem usa e <br />
+              <b>confia na SPIA</b>
+            </h4>
+          </div>
+          <div class="w-full flex flex-wrap items-start gap-12">
+            <img src="./assets/quotes.svg" alt="" srcset="" />
+            <div>
+              <p class="font-BODY text-WHITE text-head24 font-light">
+                O SPIA transformou nosso processo de cotação de fretes. A
+                precisão é impressionante, superando até mesmo nossa equipe. Com
+                a automação, reduzimos custos e ganhamos agilidade na tomada de
+                decisões. O retorno sobre o investimento foi rápido e
+                significativo.”
+              </p>
+              <div class="flex items-center gap-6 mt-14">
+                <div
+                  class="h-[64px] w-[64px] rounded-sm bg-BLUE_PRIMARY overflow-hidden"
+                >
+                  <img
+                    class="object-cover h-[64px] w-[64px]"
+                    src="./assets/felipe-falleiros.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div>
+                  <p class="font-BODY text-head24 text-WHITE font-light">
+                    Felipe Falleiros
+                  </p>
+                  <span
+                    class="font-BODY text-sm14 text-WHITE text-opacity-45 font-thin"
+                    >CARGO, Aliança agrícola</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 py-[124px]">
+          <div>
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-WHITE bg-opacity-5 h-12 w-12 rounded-sm grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-head24 text-WHITE"
+                  icon="solar:clock-square-linear"
+                ></iconify-icon>
+              </div>
+              <p class="font-HEAD text-body20 text-WHITE font-light">Tempo</p>
+            </div>
+            <p
+              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
+            >
+              De 1h30 para 8 segundos na precificação de frete. Tome decisões
+              estratégicas com rapidez e segurança.  
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-WHITE bg-opacity-5 h-12 w-12 rounded-sm grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-head24 text-WHITE"
+                  icon="solar:box-linear"
+                ></iconify-icon>
+              </div>
+              <p class="font-HEAD text-body20 text-WHITE font-light">
+                Rastreabilidade
+              </p>
+            </div>
+            <p
+              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
+            >
+              Mais controle e rastreabilidade entre áreas comercial e logística.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-WHITE bg-opacity-5 h-12 w-12 rounded-sm grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-head24 text-WHITE"
+                  icon="solar:chat-round-money-linear"
+                ></iconify-icon>
+              </div>
+              <p class="font-HEAD text-body20 text-WHITE font-light">Custo</p>
+            </div>
+            <p
+              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
+            >
+              Reduzimos custos na contratação em até 20% com previsões precisas
+              e otimização de recursos.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-WHITE bg-opacity-5 h-12 w-12 rounded-sm grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-head24 text-WHITE"
+                  icon="solar:chandelier-bold"
+                ></iconify-icon>
+              </div>
+              <p class="font-HEAD text-body20 text-WHITE font-light">
+                Decisivo
+              </p>
+            </div>
+            <p
+              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
+            >
+              Contribui para tomada de decisões importantes para o processo
+              logístico.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-WHITE bg-opacity-5 h-12 w-12 rounded-sm grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-head24 text-WHITE"
+                  icon="solar:compass-big-linear"
+                ></iconify-icon>
+              </div>
+              <p class="font-HEAD text-body20 text-WHITE font-light">
+                Precisão
+              </p>
+            </div>
+            <p
+              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
+            >
+              Erro médio de apenas 4%. Superando previsões humanas.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-WHITE bg-opacity-5 h-12 w-12 rounded-sm grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-head24 text-WHITE"
+                  icon="solar:chat-round-money-linear"
+                ></iconify-icon>
+              </div>
+              <p class="font-HEAD text-body20 text-WHITE font-light">
+                Compliance
+              </p>
+            </div>
+            <p
+              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
+            >
+              Rastreabilidade do preço orçado X cotado X executado conectado
+              direto com o CTe.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-WHITE bg-opacity-5 h-12 w-12 rounded-sm grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-head24 text-WHITE"
+                  icon="solar:buildings-2-linear"
+                ></iconify-icon>
+              </div>
+              <p class="font-HEAD text-body20 text-WHITE font-light">Mercado</p>
+            </div>
+            <p
+              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
+            >
+              Visibilidade do preço praticado no mercado.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-BLUE_PRIMARY h-12 w-12 rounded-sm grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-head24 text-WHITE"
+                  icon="solar:arrow-right-down-linear"
+                ></iconify-icon>
+              </div>
+              <p class="font-HEAD text-body20 text-WHITE font-light">
+                Saiba mais
+              </p>
+            </div>
+            <p
+              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
+            >
+              Converse com um de nossos especialista e entenda como podemos
+              revolucionar seu negócio.
+
+              <a
+                class="text-WHITE text-body18 md:text-body14 underline-offset-1 mt-2 flex items-center gap-2 hover:gap-4 transition-all"
+                href=""
+                >Falar com especialista<iconify-icon
+                  class="text-body14 text-WHITE"
+                  icon="solar:alt-arrow-right-line-duotone"
+                ></iconify-icon
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      id="planos"
+      class="bg-GRAY_700 border-t border-t-WHITE border-opacity-5"
+    >
+      <div class="max-w-[1248px] mx-auto w-full py-[124px]">
+        <div class="flex items-center flex-col max-w-[524px] mx-auto w-full">
+          <div
+            class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
+          >
+            <iconify-icon
+              class="text-body18 text-BLUE_PRIMARY"
+              icon="solar:money-bag-linear"
+            ></iconify-icon>
+            <p class="uppercase font-BODY text-WHITE text-body16">PLANOS</p>
+          </div>
+          <h3
+            class="text-center font-HEAD text-head40 text-WHITE leading-tight font-light"
+          >
+            A Spia se adapta ao seu negócio.
+          </h3>
+          <p
+            class="text-center font-BODY font-normal text-head24 text-WHITE mt-4"
+          >
+            Não importa o tamanho, nós temos um plano feito para o seu negócio!
+          </p>
+        </div>
+
+        <div class="mt-16">
+          <table
+            class="hidden w-full lg:whitespace-nowrap relative border-collapse"
+          >
+            <div class="h-4 bg-GRAY_700 w-full z-[98] sticky top-[96px]"></div>
+
+            <thead class="sticky top-[112px]">
+              <tr>
+                <th>
+                  <div class="h-[124px] bg-GRAY_700 flex items-center">
+                    <h6
+                      class="text-start md:p-6 p-2 font-BODY font-light md:text-head24 text-body12 text-WHITE"
+                    >
+                      Módulos
+                    </h6>
+                  </div>
+                </th>
+                <th>
+                  <div
+                    class="bg-opacity-75 backdrop-blur-md flex items-center h-[124px] bg-GRAY_600_0 bg-[#171A2C] rounded-tl-lg"
+                  >
+                    <h6
+                      class="text-center md:text-start md:p-6 p-2 font-BODY font-light md:text-head24 text-body12 text-WHITE"
+                    >
+                      Business
+                    </h6>
+                  </div>
+                </th>
+                <th>
+                  <div
+                    class="bg-opacity-75 backdrop-blur-md flex items-center h-[124px] bg-GRAY_600_0 bg-[#162627]"
+                  >
+                    <h6
+                      class="text-center md:text-start md:p-6 p-2 font-BODY font-light md:text-head24 text-body12 text-WHITE"
+                    >
+                      Premium
+                    </h6>
+                  </div>
+                </th>
+                <th>
+                  <div
+                    class="bg-opacity-75 backdrop-blur-md flex items-center h-[124px] bg-[#19191E] rounded-tr-lg"
+                  >
+                    <h6
+                      class="text-center md:text-start md:p-6 p-2 font-BODY font-light md:text-head24 text-body12 text-WHITE"
+                    >
+                      Enterprise
+                    </h6>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Setup
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  <s>R$ 5.000,00</s>
+                  <b>Grátis</b>
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  R$ 6.500,00
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  Apartir de R$ 25.000,00
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Mensalidade
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  R$ 2.000,00
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  R$ 5.000,00
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  Apartir de R$ 15.000,00
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Consultas
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  Até 500
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  Até 1000
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  Acima de 1000
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Usuários
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  2
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  5
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  15
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Agressores
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  Padrão
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  Personalizado
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  Personalizado
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Fretes executados
+                </td>
+                <td
+                  class="h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Fretes executados
+                </td>
+                <td
+                  class="h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  NÃO
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  NÃO
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Horizonte de predição
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  30 Dias
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  60 Dias
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  90 Dias
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Tabela ANTT
+                </td>
+                <td
+                  class="h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Auditoria
+                </td>
+                <td
+                  class="h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  NÃO
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  NÃO
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  NÃO
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Cotação de multirotas
+                </td>
+                <td
+                  class="h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  NÃO
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Analytics
+                </td>
+                <td
+                  class="h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  NÃO
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  Personalizada
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  API
+                </td>
+                <td
+                  class="h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  NÃO
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  <div class="flex items-center gap-3">
+                    <iconify-icon
+                      class="text-body18 text-[#06A888]"
+                      icon="solar:verified-check-bold"
+                    ></iconify-icon>
+                    SIM
+                  </div>
+                </td>
+              </tr>
+              <tr class="h-[96px]">
+                <td
+                  class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
+                >
+                  Exportação de dados
+                </td>
+                <td
+                  class="flex items-center gap-3 h-[96px] px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-BLUE_OPACITY_TABLE bg-opacity-5"
+                >
+                  Excel
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GREEN_OPACITY_TABLE bg-opacity-5"
+                >
+                  Excel
+                </td>
+                <td
+                  class="px-4 font-BODY font-normal md:text-body18 text-body14 text-WHITE bg-GRAY_OPACITY_TABLE bg-opacity-5"
+                >
+                  Personalizada
+                </td>
+              </tr>
+            </tbody>
+            <tfoot class="z-[98] sticky bottom-0">
+              <tr>
+                <td>
+                  <div class="h-[124px] bg-GRAY_700 flex items-center">
+                    <h6
+                      class="text-start p-6 font-BODY font-light text-head24 text-WHITE"
+                    ></h6>
+                  </div>
+                </td>
+                <td>
+                  <div
+                    class="flex items-center h-[124px] bg-GRAY_600_0 bg-[#171A2C] rounded-tl-lg rounded-bl-lg"
+                  >
+                    <div class="w-full flex items-center justify-center">
+                      <button
+                        class="md:px-8 px-2 h-[56px] bg-BLUE_PRIMARY text-WHITE font-BODY font-medium md:text-body16 text-sm12 rounded-[4px] hover:opacity-75 transition-all"
+                      >
+                        Falar com especialista
+                      </button>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div
+                    class="flex items-center h-[124px] bg-GRAY_600_0 bg-[#162627]"
+                  >
+                    <div class="w-full flex items-center justify-center">
+                      <button
+                        class="md:px-8 px-2 md:h-[56px] bg-GREEN_OPACITY_TABLE text-WHITE font-BODY font-medium text-body16 rounded-[4px] hover:opacity-75 transition-all"
+                      >
+                        Falar com especialista
+                      </button>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div
+                    class="h-[124px] flex items-center bg-[#19191E] rounded-tr-lg rounded-br-lg"
+                  >
+                    <div class="w-full flex items-center justify-center">
+                      <button
+                        class="md:px-8 px-2 md:h-[56px] bg-GRAY_OPACITY_TABLE text-WHITE font-BODY font-medium text-body16 rounded-[4px] hover:opacity-75 transition-all"
+                      >
+                        Falar com especialista
+                      </button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <div class="relative">
+            <div
+              class="table-head flex items-center h-[72px] sticky top-[112px] backdrop-blur-md"
+            >
+              <div
+                class="w-full bg-BLUE_OPACITY_TABLE bg-opacity-10 grid place-content-center h-[72px]"
+              >
+                <p class="font-BODY text-WHITE text-body16 font-normal h-full">
+                  Business
+                </p>
+              </div>
+              <div
+                class="w-full bg-GREEN_OPACITY_TABLE bg-opacity-10 grid place-content-center h-[72px]"
+              >
+                <p class="font-BODY text-WHITE text-body16 font-normal h-full">
+                  Premium
+                </p>
+              </div>
+              <div
+                class="w-full bg-GRAY_OPACITY_TABLE bg-opacity-10 grid place-content-center h-[72px]"
+              >
+                <p class="font-BODY text-WHITE text-body16 font-normal h-full">
+                  Enterprise
+                </p>
+              </div>
+            </div>
+
+            <div class="container-table"></div>
+
+            <div class="table-footer flex items-center h-[72px] mt-[72px]">
+              <a
+                class="w-full bg-BLUE_OPACITY_TABLE bg-opacity-45 grid place-content-center h-[72px] hover:bg-opacity-20 transition-all cursor-pointer"
+              >
+                <u class="font-BODY text-WHITE text-body16 font-normal h-full">
+                  Consultar
+                </u>
+              </a>
+              <a
+                class="w-full bg-GREEN_OPACITY_TABLE bg-opacity-45 grid place-content-center h-[72px] hover:bg-opacity-20 transition-all cursor-pointer"
+              >
+                <u class="font-BODY text-WHITE text-body16 font-normal h-full">
+                  Consultar
+                </u>
+              </a>
+              <a
+                class="w-full bg-GRAY_OPACITY_TABLE bg-opacity-45 grid place-content-center h-[72px] hover:bg-opacity-20 transition-all cursor-pointer"
+              >
+                <u class="font-BODY text-WHITE text-body16 font-normal h-full">
+                  Consultar
+                </u>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section
+      id="sobre-nós"
+      class="bg-BLACK bg-bg-mapa-do-brasil bg-contain bg-no-repeat pt-[124px] pb-[184px]"
+    >
+      <div class="max-w-[1248px] px-4 mx-auto">
+        <div class="w-full max-w-[800px] flex flex-col items-start">
+          <div
+            class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
+          >
+            <iconify-icon
+              class="text-body18 text-BLUE_PRIMARY rotate-90"
+              icon="solar:map-arrow-up-bold"
+            ></iconify-icon>
+            <p class="uppercase font-BODY text-WHITE text-body16">
+              NOSSA JORNADA
+            </p>
+          </div>
+          <h3
+            class="text-start font-HEAD text-head40 text-WHITE leading-tight font-light"
+          >
+            Sobre Nós
+          </h3>
+          <div class="flex flex-col gap-4 mt-8">
+            <p class="font-BODY text-body18 text-WHITE font-light">
+              A SPIA surgiu da visão compartilhada de duas empresas que
+              enfrentaram desafios comuns e decidiram inovar juntas. De um lado,
+              a Polifrete, uma logtech dedicada à transformação digital e ao
+              pagamento de fretes, com uma paixão por otimizar e modernizar o
+              setor logístico. Do outro, a Sapiens, que desde 2019 vem
+              revolucionando o agronegócio com soluções de inteligência
+              artificial capazes de prever os preços futuros de commodities,
+              ajudando seus clientes a navegar com confiança em um mercado
+              volátil.
+            </p>
+            <p class="font-BODY text-body18 text-WHITE font-light">
+              Ao escutar as necessidades e desafios de seus clientes, essas duas
+              empresas perceberam uma lacuna no mercado: não existia uma solução
+              que unisse o poder da inteligência artificial com a expertise em
+              logística para fornecer dados de preços de frete em tempo real.
+              Motivadas por essa oportunidade e pela vontade de criar algo
+              verdadeiramente transformador, a Polifrete e a Sapiens uniram
+              forças para dar vida à SPIA.
+            </p>
+            <p class="font-BODY text-body18 text-WHITE font-light">
+              O resultado? Uma plataforma pioneira e inovadora que mudou o
+              cenário da logística no Brasil. Hoje, a SPIA é líder no mercado de
+              dados, fornecendo preços de frete em tempo real para mais de 31
+              milhões de rotas, ajudando empresas a tomarem decisões mais
+              assertivas e a se manterem competitivas em um setor em constante
+              mudança. A SPIA não é apenas uma plataforma; é o futuro da
+              logística, criada por empresas que entendem a importância da
+              inovação e da resposta rápida às necessidades do mercado.
+            </p>
+          </div>
+          <button
+            class="mt-12 md:px-8 px-2 md:h-[64px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body16 rounded-[4px] hover:bg-BLUE_HOVER transition-all"
+          >
+            Falar com especialista
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="fale-com-a-gente" class="bg-BLACK">
+      <div class="max-w-[1248px] w-full py-[124px] mx-auto">
+        <div class="flex items-center flex-col max-w-[524px] mx-auto w-full">
+          <div
+            class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
+          >
+            <iconify-icon
+              class="text-body18 text-BLUE_PRIMARY"
+              icon="solar:map-arrow-up-bold"
+            ></iconify-icon>
+            <p class="uppercase font-BODY text-WHITE text-body16">
+              FALE CONOSO
+            </p>
+          </div>
+          <h3
+            class="text-center font-HEAD text-head40 text-WHITE leading-tight font-light"
+          >
+            Entre em contato
+          </h3>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-between mt-[64px]"
+        >
+          <div class="max-w-[592px] w-full grid place-content-center">
+            <img src="./assets/side-image-contato.png" alt="" srcset="" />
+          </div>
+          <div
+            class="max-w-[484px] h-[564px] w-full p-12 border border-STROKE rounded-lg"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-GRAY_700">
+      <div
+        class="max-w-[1248px] px-4 mx-auto pt-[124px] flex flex-col items-center"
+      >
+        <div class="flex flex-col items-center max-w-[524px] mx-auto w-full">
+          <div
+            class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
+          >
+            <iconify-icon
+              class="text-body18 text-BLUE_PRIMARY"
+              icon="solar:global-linear"
+            ></iconify-icon>
+            <p class="uppercase font-BODY text-WHITE text-body16">NOTÍCIAS</p>
+          </div>
+          <h3
+            class="text-center font-HEAD text-head40 text-WHITE leading-tight font-light"
+          >
+            O que a mídia está falando
+          </h3>
+        </div>
+        <div class="flex items-center flex-wrap gap-8 mt-16">
+          <div class="md:max-w-[384px] w-full relative group h-[348px]">
+            <div class="w-full">
+              <img
+                class="rounded-lg z-10 w-full"
+                src="./assets/intermodal-banner.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <a
+              href="https://digital.intermodal.com.br/tecnologia/predicao-futura-do-preco-do-frete-por-meio-da-inteligencia-artificial"
+              target="_blank"
+              class="cursor-pointer absolute top-16 group-hover:top-20 transition-all bg-WHITE p-6 h-[284px] rounded-lg flex flex-col justify-between"
+            >
+              <div>
+                <img class="" src="./assets/intermodal.png" alt="" />
+                <h4 class="font-BODY font-normal text-head24 text-BLACK mt-6">
+                  Predição futura do preço do frete por meio da Inteligência
+                  Artificial.
+                </h4>
+              </div>
+              <div>
+                <div
+                  class="font-BODY font-semibold text-body16 text-BLUE_PRIMARY flex items-center gap-2"
+                  href="#"
+                >
+                  Ler mais
+                  <iconify-icon
+                    class="text-body18 text-BLUE_PRIMARY"
+                    icon="solar:alt-arrow-right-linear"
+                  ></iconify-icon>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="md:max-w-[384px] w-full relative group h-[348px]">
+            <div class="w-full">
+              <img
+                class="rounded-lg z-10 w-full"
+                src="./assets/mundo-logistica-banner.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <a
+              href="https://mundologistica.com.br/noticias/logistica-inteligencia-artificial-precificacao-fretes-futuros"
+              target="_blank"
+              class="cursor-pointer absolute top-16 group-hover:top-20 transition-all bg-WHITE p-6 h-[284px] rounded-lg flex flex-col justify-between"
+            >
+              <div>
+                <img class="" src="./assets/mundo-logistica.png" alt="" />
+                <h4 class="font-BODY font-normal text-head24 text-BLACK mt-6">
+                  Inovação na Logística: Inteligência Artificial transforma a
+                  precificação de fretes futuros
+                </h4>
+              </div>
+              <div>
+                <div
+                  class="font-BODY font-semibold text-body16 text-BLUE_PRIMARY flex items-center gap-2"
+                  href="#"
+                >
+                  Ler mais
+                  <iconify-icon
+                    class="text-body18 text-BLUE_PRIMARY"
+                    icon="solar:alt-arrow-right-linear"
+                  ></iconify-icon>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="-mb-[180px] w-full h-[384px] bg-BLUE_PRIMARY mt-24 rounded-lg bg-bg-call-to-action bg-cover p-16 flex items-center justify-end"
+        >
+          <h5
+            class="text-end font-HEAD text-head40 text-WHITE font-thin max-w-[412px]"
+          >
+            A maior plataforma de
+            <b class="font-light">precificação de frete do agronegócio</b> do
+            Brasil.
+          </h5>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-BLACK">
+      <div class="max-w-[1248px] px-4 mx-auto w-full pt-[280px] pb-[84px]">
+        <div
+          class="w-full flex flex-col md:flex-row items-start justify-between gap-12"
+        >
+          <div class="max-w-[488px] w-full">
+            <img class="" src="./assets/logo-mono.svg" alt="" />
+            <p
+              class="font-BODY text-body16 text-WHITE font-normal mt-8 max-w-[384px]"
+            >
+              A SPIA® é uma solução de ciência de dados que trabalha com
+              algoritmos de predição dos preços de fretes agrícolas para SOJA,
+              MILHO, TRIGO, Óleo de Soja e Farelo de Soja.
+            </p>
+          </div>
+          <div class="flex flex-wrap lg:flex-nowrap gap-8 w-full">
+            <div class="max-w-[384px] w-full">
+              <span class="font-BODY text-body16 text-WHITE font-medium"
+                >Navegue</span
+              >
+              <div class="mt-6 flex flex-col gap-4">
+                <a
+                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  href="#soluções"
+                  >Soluções</a
+                >
+                <a
+                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  href="#cases"
+                  >Cases</a
+                >
+                <a
+                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  href="#planos"
+                  >Planos</a
+                >
+                <a
+                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  href="#sobre-nós"
+                  >Sobre Nós</a
+                >
+                <a
+                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  href="#fale-com-a-gente"
+                  >Fale com a gente</a
+                >
+              </div>
+            </div>
+            <div class="max-w-[384px] w-full">
+              <span class="font-BODY text-body16 text-WHITE font-medium"
+                >Suporte</span
+              >
+              <div class="mt-6 flex flex-col gap-4">
+                <a
+                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  href=""
+                  >Termos de uso</a
+                >
+                <a
+                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  href=""
+                  >Políticas de privacidade</a
+                >
+                <a
+                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  href=""
+                  >FAQ</a
+                >
+              </div>
+            </div>
+            <div class="max-w-[384px] w-full flex flex-col gap-12">
+              <div>
+                <span class="font-BODY text-body16 text-WHITE font-medium"
+                  >Fale conosco</span
+                >
+                <div class="mt-6 flex flex-col gap-4">
+                  <a
+                    class="flex items-center gap-2 font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                    href=""
+                  >
+                    <iconify-icon
+                      class="text-body18 text-WHITE"
+                      icon="fontisto:email"
+                    ></iconify-icon>
+                    comercial@spialog,com</a
+                  >
+                  <a
+                    class="flex items-center gap-2 font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                    href=""
+                  >
+                    <iconify-icon
+                      class="text-body18 text-WHITE"
+                      icon="ph:phone"
+                    ></iconify-icon>
+                    +55 (11) 3353-424</a
+                  >
+                </div>
+              </div>
+              <div>
+                <span class="font-BODY text-body16 text-WHITE font-medium"
+                  >Siga nossas redes</span
+                >
+                <div class="mt-6 flex items-center gap-4">
+                  <a
+                    class="flex items-center gap-2 font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                    href=""
+                  >
+                    <iconify-icon
+                      class="text-head24 text-WHITE"
+                      icon="ri:linkedin-fill"
+                    ></iconify-icon>
+                  </a>
+                  <a
+                    class="flex items-center gap-2 font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                    href=""
+                  >
+                    <iconify-icon
+                      class="text-head24 text-WHITE"
+                      icon="ri:facebook-fill"
+                    ></iconify-icon>
+                  </a>
+                  <a
+                    class="flex items-center gap-2 font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                    href=""
+                  >
+                    <iconify-icon
+                      class="text-head24 text-WHITE"
+                      icon="mdi:instagram"
+                    ></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full pt-[124px] flex justify-between items-center">
+          <div>
+            <p class="font-BODY text-WHITE text-body16 font-normal">
+              Todos direitos da páginas são reservados a SPIA.log® 2024
+            </p>
+          </div>
+          <div>
+            <button
+              class="h-16 w-16 bg-WHITE bg-opacity-5 rounded-md grid place-content-center hover:bg-opacity-10 transition-all"
+            >
+              <iconify-icon
+                class="text-body16 text-WHITE"
+                icon="ph:arrow-up"
+              ></iconify-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./script.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        spaceBetween: 32,
+        breakpoints: {
+          // when the window width is >= 320px
+          320: {
+            slidesPerView: 1.2,
+            spaceBetween: 16,
+          },
+          // when the window width is >= 640px
+          640: {
+            slidesPerView: 2.2,
+            spaceBetween: 24,
+          },
+          // when the window width is >= 1024px
+          1024: {
+            slidesPerView: 3.2,
+            spaceBetween: 32,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Manrope", "halyard-display", sans-serif;
+}
+
+body {
+  background-color: #040404;
+}
+
+.logomark-animation {
+  animation: logomarkEnter 0.2s ease-in forwards;
+  z-index: 80;
+  opacity: 0;
+}
+
+.logotext-animation {
+  animation: logotextEnter 0.2s ease-in forwards 0.25s;
+  z-index: 10;
+  opacity: 0;
+}
+
+@keyframes logomarkEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes logotextEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.card-active {
+  border-bottom: 1px solid #fff !important;
+}
+
+.card-active > p {
+  color: #fff !important;
+}
+
+@media (min-width: 768px) {
+  .card-inactive {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .margin-container-left {
+    margin-left: calc((100vw - 1216px) / 2);
+  }
+}
