@@ -292,3 +292,13 @@ body {
 .box-shadow-alert {
   box-shadow: 0 0px 40px 10px #040404;
 }
+
+.disable-entering {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#entering-screen {
+  transition: 0.15s all linear;
+}

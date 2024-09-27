@@ -291,17 +291,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Update title and description
     const element = `      <div class="animation-hero-entering max-w-[712px] mx-auto w-full flex flex-col items-center">
-    <div
-      class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
-    >
-      <iconify-icon
-        class="text-body18 text-BLUE_PRIMARY"
-        icon="solar:map-arrow-up-bold"
-      ></iconify-icon>
-      <p class="uppercase font-BODY text-WHITE text-body16">
-        A SPIA RESOLVE
-      </p>
-    </div>
+    
     <h1
       id="hero-title"
       class="text-center font-HEAD text-head32 md:text-head48 text-WHITE leading-tight font-light"
@@ -315,11 +305,12 @@ document.addEventListener("DOMContentLoaded", function () {
     ${activeCall.desc}
     </p>
     <div class="flex justify-center w-full mt-12">
-      <button
-        class="w-full md:w-auto px-8 h-[64px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body16 rounded-[4px] hover:bg-BLUE_HOVER transition-all"
+      <a 
+        href='#fale-com-a-gente'
+        class="grid place-content-center w-full md:w-auto px-8 h-[64px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body16 rounded-[4px] hover:bg-BLUE_HOVER transition-all"
       >
         Falar com especialista
-      </button>
+      </a>
     </div>
   </div>`;
 
@@ -352,3 +343,13 @@ document.addEventListener("DOMContentLoaded", function () {
   updateSlide();
   slideInterval = setInterval(updateSlide, 12000);
 });
+
+function fadeOutScreen() {
+  const screen = document.getElementById("entering-screen");
+
+  setTimeout(() => {
+    screen.classList.add("disable-entering");
+  }, 250);
+}
+
+fadeOutScreen();

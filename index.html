@@ -42,6 +42,34 @@
     <link rel="manifest" href="/assets/favicon//site.webmanifest" />
   </head>
   <body>
+    <div
+      id="entering-screen"
+      class="transition-all bg-BLACK h-screen w-screen fixed top-0 right-0 left-0 bottom-0 z-[9999999] grid place-content-center"
+    >
+      <a class="flex items-center gap-[2.87px] group transition-all" href="">
+        <svg
+          width="48"
+          height="49"
+          viewBox="0 0 31 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition-all text-BLUE_PRIMARY hover:text-WHITE logomark-animation"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M13.9274 10.8001H19.8382C19.9994 10.8001 20.1501 10.8392 20.2832 10.9101C20.1466 10.5234 19.7822 10.2466 19.3547 10.2466H16.4046L12.137 5.92509C11.4783 5.23322 11.5413 4.30008 12.2211 3.59756L15.378 0.397204C15.9035 -0.135006 16.7619 -0.135006 17.2875 0.397204L30.6087 13.8869C31.1343 14.4192 31.1343 15.2884 30.6087 15.8206L17.2875 29.3104C16.7619 29.8426 15.9035 29.8426 15.378 29.3104L14.0115 27.9266L20.2552 21.604C20.7807 21.0718 20.7807 20.2025 20.2552 19.6703L18.3982 17.7898L20.1746 15.991C20.7001 15.4587 20.7001 14.5895 20.1746 14.0573L18.9272 12.7941H13.9274C13.3843 12.7941 12.9428 12.3435 12.9428 11.7971C12.9428 11.2472 13.3878 10.8001 13.9274 10.8001ZM3.56682 12.0987C3.04826 12.6345 3.00271 13.3441 3.50375 13.8728L4.3026 14.6817H6.32777C6.75523 14.6817 7.12312 14.962 7.25626 15.3488C7.14414 15.3026 7.02151 15.2778 6.89538 15.2778H0.984553C0.441472 15.2778 0 15.7284 0 16.2748C0 16.8247 0.444976 17.2718 0.984553 17.2718H6.86384L9.6248 20.0677C10.0242 20.4722 10.0242 21.1356 9.6248 21.5401L3.62638 27.6144C3.15337 28.0757 3.0833 28.6859 3.51776 29.2075L5.97039 31.6911C6.36982 32.0956 7.02502 32.0956 7.42444 31.6911L17.5783 21.4088C17.9777 21.0044 17.9777 20.3409 17.5783 19.9364L7.42444 9.65411C7.02502 9.24963 6.36982 9.24963 5.97039 9.65411L3.56331 12.0916L3.56682 12.0987ZM4.62144 18.3611H6.59405C7.13714 18.3611 7.57861 18.8117 7.57861 19.3581C7.57861 19.908 7.13363 20.3551 6.59405 20.3551H4.62144C4.07836 20.3551 3.63689 19.9045 3.63689 19.3581C3.63689 18.8081 4.08187 18.3611 4.62144 18.3611ZM10.2485 8.09296C9.70538 8.09296 9.26391 8.54356 9.26391 9.08996C9.26391 9.63991 9.70889 10.087 10.2485 10.087H12.659C13.2021 10.087 13.6436 9.63637 13.6436 9.08996C13.6436 8.54001 13.1986 8.09296 12.659 8.09296H10.2485Z"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
+      <p
+        class="absolute bottom-6 left-6 font-BODY uppercase text-sm14 text-WHITE tracking-widest"
+      >
+        SISTEMA SPIA
+      </p>
+    </div>
+
     <header id="header" class="w-full h-[96px]">
       <div
         class="bg-BLACK h-[96px] w-full fixed top-0 left-0 right-0 z-[99999]"
@@ -155,7 +183,7 @@
             </div>
             <div class="flex items-center gap-4">
               <a
-                href="https://app.spia.log.br/login"
+                href="https://app.spia.log.br/"
                 class="flex items-center gap-2 px-4 h-[48px] border border-WHITE border-opacity-5 text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:bg-WHITE hover:bg-opacity-5 transition-all"
               >
                 Acessar
@@ -164,11 +192,12 @@
                   icon="solar:user-circle-linear"
                 ></iconify-icon>
               </a>
-              <button
-                class="px-4 h-[48px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:opacity-85 hover:bg-BLUE_HOVER transition-all"
+              <a
+                href="#fale-com-a-gente"
+                class="grid place-content-center px-4 h-[48px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:opacity-85 hover:bg-BLUE_HOVER transition-all"
               >
                 Falar com especialista
-              </button>
+              </a>
             </div>
           </div>
           <div
@@ -246,11 +275,12 @@
                   icon="solar:user-circle-linear"
                 ></iconify-icon>
               </a>
-              <button
-                class="w-full md:w-auto px-4 h-[48px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:opacity-85 hover:bg-BLUE_HOVER transition-all"
+              <a
+                href="#fale-com-a-gente"
+                class="grid place-content-center w-full md:w-auto px-4 h-[48px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:opacity-85 hover:bg-BLUE_HOVER transition-all"
               >
                 Falar com especialista
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -279,7 +309,7 @@
 
       <div
         id="price-thermometer"
-        class="hidden animation-hero-entering w-full md:h-[256px] p-6 border-WHITE border-[1px] border-opacity-5 rounded-lg mt-[64px] md:mt-[128px]"
+        class="hidden animation-hero-entering w-full md:h-[256px] p-6 border-WHITE border-[1px] border-opacity-5 rounded-lg mt-[64px] md:mt-[128px] hover:scale-105 transition-all"
       >
         <div class="w-full flex items-center justify-between flex-wrap gap-2">
           <div class="flex items-center gap-2">
@@ -390,55 +420,55 @@
         class="w-full grid md:grid-cols-3 gap-8 intersect intersect-hidden intersect-animate-bottom"
       >
         <div
-          class="intersect-transition-40 bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
+          class="intersect-transition-40 bg-GRAY_800 w-full rounded-lg p-8 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
         >
-          <div class="w-full flex items-center justify-center gap-3">
+          <div class="w-fullgap-3">
             <iconify-icon
               class="text-head24 text-BLUE_PRIMARY"
               icon="solar:map-linear"
             ></iconify-icon>
-            <h2 class="font-BODY text-head24 text-WHITE font-normal">
+            <h2 class="font-BODY text-head32 text-WHITE font-normal mt-2">
               +31 Milhões de rotas
             </h2>
           </div>
           <p
-            class="font-BODY text-body18 text-WHITE font-light mt-4 text-center"
+            class="font-BODY text-body18 text-WHITE font-light mt-4 text-start"
           >
             Mais de 5 mil opções de origem e destinos para cotação.
           </p>
         </div>
         <div
-          class="intersect-transition-40 bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
+          class="intersect-transition-40 bg-GRAY_800 w-full rounded-lg p-8 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
         >
-          <div class="w-full flex items-center justify-center gap-3">
+          <div class="w-ful gap-3">
             <iconify-icon
               class="text-head24 text-BLUE_PRIMARY"
               icon="solar:compass-linear"
             ></iconify-icon>
-            <h2 class="font-BODY text-head24 text-WHITE font-normal">
+            <h2 class="font-BODY text-head32 text-WHITE font-normal mt-2">
               +96% de precisão
             </h2>
           </div>
           <p
-            class="font-BODY text-body18 text-WHITE font-light mt-4 text-center"
+            class="font-BODY text-body18 text-WHITE font-light mt-4 text-start"
           >
             Termômetro do último preço executado do mercado nos últimos 12 meses
           </p>
         </div>
         <div
-          class="intersect-transition-40 bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
+          class="intersect-transition-40 bg-GRAY_800 w-full rounded-lg p-8 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
         >
-          <div class="w-full flex items-center justify-center gap-3">
+          <div class="w-ful gap-3">
             <iconify-icon
               class="text-head24 text-BLUE_PRIMARY"
               icon="solar:routing-2-linear"
             ></iconify-icon>
-            <h2 class="font-BODY text-head24 text-WHITE font-normal">
+            <h2 class="font-BODY text-head32 text-WHITE font-normal mt-2">
               24/7 Disponível
             </h2>
           </div>
           <p
-            class="font-BODY text-body18 text-WHITE font-light mt-4 text-center"
+            class="font-BODY text-body18 text-WHITE font-light mt-4 text-start"
           >
             Predição para os próximos 90 dias.
           </p>
@@ -446,7 +476,7 @@
       </div>
     </section>
 
-    <section id="soluções" class="bg-GRAY_800">
+    <section id="soluções" class="bg-[GRAY_800]">
       <div class="max-w-[1248px] mx-auto w-full px-4 py-[124px]">
         <div class="flex flex-col items-start">
           <h1 class="font-HEAD text-head40 text-WHITE font-light">
@@ -519,7 +549,7 @@
             <div>
               <a
                 class="flex items-center gap-2 font-BODY text-body18 text-WHITE font-light mt-6 hover:gap-6 transition-all"
-                href=""
+                href="#fale-com-a-gente"
               >
                 Quero saber mais sobre
                 <iconify-icon
@@ -566,7 +596,7 @@
             <div>
               <a
                 class="flex items-center gap-2 font-BODY text-body18 text-WHITE font-light mt-6 hover:gap-6 transition-all"
-                href=""
+                href="#fale-com-a-gente"
               >
                 Quero saber mais sobre
                 <iconify-icon
@@ -580,7 +610,7 @@
       </div>
     </section>
 
-    <section class="bg-GRAY_600 py-[124px]">
+    <section class="bg-[#1A1A1F] py-[124px]">
       <div class="max-w-[1248px] mx-auto px-4">
         <div class="flex flex-col items-start">
           <div
@@ -667,7 +697,7 @@
       </div>
     </section>
 
-    <section id="cases" class="bg-GRAY_600">
+    <section id="cases" class="bg-[#1A1A1F]">
       <div class="max-w-[1248px] mx-auto w-full px-4 py-14">
         <div class="w-full flex flex-col md:flex-row items-start gap-12">
           <div class="max-w-[348px] w-full">
@@ -712,7 +742,7 @@
                   </p>
                   <span
                     class="font-BODY text-sm14 text-WHITE text-opacity-45 font-thin"
-                    >CARGO, Aliança agrícola</span
+                    >DIRETOR, Aliança agrícola</span
                   >
                 </div>
               </div>
@@ -897,7 +927,7 @@
 
               <a
                 class="text-WHITE text-body18 md:text-body14 underline-offset-1 mt-2 flex items-center gap-2 hover:gap-4 transition-all"
-                href=""
+                href="#fale-com-a-gente"
                 >Falar com especialista<iconify-icon
                   class="text-body14 text-WHITE"
                   icon="solar:alt-arrow-right-line-duotone"
@@ -915,7 +945,7 @@
     >
       <div class="max-w-[1248px] mx-auto w-full py-[124px]">
         <div
-          class="flex items-center flex-col max-w-[524px] mx-auto w-full px-4"
+          class="flex items-center flex-col max-w-[564px] mx-auto w-full px-4"
         >
           <div
             class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
@@ -929,8 +959,7 @@
           <h3
             class="text-center font-HEAD text-head40 text-WHITE leading-tight font-light"
           >
-            A Spia se adapta ao <br />
-            seu negócio.
+            A Spia se adapta ao seu negócio.
           </h3>
           <p
             class="text-center font-BODY font-normal text-head24 text-WHITE mt-4"
@@ -939,10 +968,8 @@
           </p>
         </div>
 
-        <div class="mt-16">
-          <table
-            class="hidden w-full lg:whitespace-nowrap relative border-collapse"
-          >
+        <div class="mt-16 w-full">
+          <table class="hidden md:table w-full relative border-collapse">
             <div class="h-4 bg-GRAY_700 w-full z-[98] sticky top-[96px]"></div>
 
             <thead class="sticky top-[112px]">
@@ -992,7 +1019,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1015,7 +1042,7 @@
                   Apartir de R$ 25.000,00
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1037,7 +1064,7 @@
                   Apartir de R$ 15.000,00
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1059,7 +1086,7 @@
                   Acima de 1000
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1081,7 +1108,7 @@
                   15
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1103,7 +1130,7 @@
                   Personalizado
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1143,7 +1170,7 @@
                   </div>
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1171,7 +1198,7 @@
                   </div>
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1193,7 +1220,7 @@
                   90 Dias
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1233,7 +1260,7 @@
                   </div>
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1255,7 +1282,7 @@
                   NÃO
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1289,7 +1316,7 @@
                   </div>
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1317,7 +1344,7 @@
                   Personalizada
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1351,7 +1378,7 @@
                   </div>
                 </td>
               </tr>
-              <tr class="h-[96px]">
+              <tr class="h-[84px]">
                 <td
                   class="px-4 font-BODY font-light md:text-body20 text-body14 text-WHITE"
                 >
@@ -1374,7 +1401,7 @@
                 </td>
               </tr>
             </tbody>
-            <tfoot class="z-[98] sticky bottom-0">
+            <tfoot class="">
               <tr>
                 <td>
                   <div class="h-[124px] bg-GRAY_700 flex items-center">
@@ -1388,11 +1415,12 @@
                     class="flex items-center h-[124px] bg-GRAY_600_0 bg-[#171A2C] rounded-tl-lg rounded-bl-lg"
                   >
                     <div class="w-full flex items-center justify-center">
-                      <button
-                        class="md:px-8 px-2 h-[56px] bg-BLUE_PRIMARY text-WHITE font-BODY font-medium md:text-body16 text-sm12 rounded-[4px] hover:opacity-75 transition-all"
+                      <a
+                        href="#fale-com-a-gente"
+                        class="grid place-content-center md:px-8 px-2 h-[56px] bg-BLUE_PRIMARY text-WHITE font-BODY font-medium md:text-body16 text-sm12 rounded-[4px] hover:opacity-75 transition-all"
                       >
                         Falar com especialista
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </td>
@@ -1401,11 +1429,12 @@
                     class="flex items-center h-[124px] bg-GRAY_600_0 bg-[#162627]"
                   >
                     <div class="w-full flex items-center justify-center">
-                      <button
-                        class="md:px-8 px-2 md:h-[56px] bg-GREEN_OPACITY_TABLE text-WHITE font-BODY font-medium text-body16 rounded-[4px] hover:opacity-75 transition-all"
+                      <a
+                        href="#fale-com-a-gente"
+                        class="grid place-content-center md:px-8 px-2 md:h-[56px] bg-GREEN_OPACITY_TABLE text-WHITE font-BODY font-medium text-body16 rounded-[4px] hover:opacity-75 transition-all"
                       >
                         Falar com especialista
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </td>
@@ -1414,11 +1443,12 @@
                     class="h-[124px] flex items-center bg-[#19191E] rounded-tr-lg rounded-br-lg"
                   >
                     <div class="w-full flex items-center justify-center">
-                      <button
-                        class="md:px-8 px-2 md:h-[56px] bg-GRAY_OPACITY_TABLE text-WHITE font-BODY font-medium text-body16 rounded-[4px] hover:opacity-75 transition-all"
+                      <a
+                        href="#fale-com-a-gente"
+                        class="grid place-content-center md:px-8 px-2 md:h-[56px] bg-GRAY_OPACITY_TABLE text-WHITE font-BODY font-medium text-body16 rounded-[4px] hover:opacity-75 transition-all"
                       >
                         Falar com especialista
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </td>
@@ -1426,7 +1456,7 @@
             </tfoot>
           </table>
 
-          <div class="relative">
+          <div class="md:hidden relative">
             <div
               class="table-head flex items-center h-[72px] md:h-[96px] sticky top-[112px] backdrop-blur-md"
             >
@@ -1545,11 +1575,12 @@
               inovação e da resposta rápida às necessidades do mercado.
             </p>
           </div>
-          <button
-            class="w-full md:w-auto mt-12 md:px-8 px-2 h-[64px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body16 rounded-[4px] hover:bg-BLUE_HOVER transition-all"
+          <a
+            href="#fale-com-a-gente"
+            class="grid place-content-center w-full md:w-auto mt-12 md:px-8 px-2 h-[64px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body16 rounded-[4px] hover:bg-BLUE_HOVER transition-all"
           >
             Falar com especialista
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -1732,6 +1763,20 @@
               algoritmos de predição dos preços de fretes agrícolas para SOJA,
               MILHO, TRIGO, Óleo de Soja e Farelo de Soja.
             </p>
+
+            <div class="flex items-center mt-12 gap-[6px] group">
+              <span
+                class="font-light text-body14 uppercase tracking-wider text-WHITE group-hover:text-opacity-45 transition-all"
+              >
+                Empresa Nascida no Ecossistema
+              </span>
+              <img
+                class="w-16"
+                src="./assets/logo-uberhurb.png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
           <div class="flex flex-wrap lg:flex-nowrap gap-8 w-full">
             <div class="max-w-[384px] w-full">
@@ -1767,7 +1812,7 @@
                 >
               </div>
             </div>
-            <div class="max-w-[384px] w-full">
+            <!-- <div class="max-w-[384px] w-full">
               <span
                 class="font-BODY text-body16 text-opacity-45 md:text-opacity-100 text-WHITE font-normal"
                 >Suporte</span
@@ -1789,7 +1834,7 @@
                   >FAQ</a
                 >
               </div>
-            </div>
+            </div> -->
             <div class="max-w-[384px] w-full flex flex-col gap-12">
               <div>
                 <span
@@ -1799,15 +1844,15 @@
                 <div class="mt-6 flex flex-col gap-4">
                   <a
                     class="flex items-center gap-2 font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
-                    href=""
+                    href="mailto:comercial@spia.log.br"
                   >
                     <iconify-icon
                       class="text-body18 text-WHITE"
                       icon="fontisto:email"
                     ></iconify-icon>
-                    comercial@spialog,com</a
+                    comercial@spia.log.br</a
                   >
-                  <a
+                  <!-- <a
                     class="flex items-center gap-2 font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                     href=""
                   >
@@ -1816,7 +1861,7 @@
                       icon="ph:phone"
                     ></iconify-icon>
                     +55 (11) 3353-424</a
-                  >
+                  > -->
                 </div>
               </div>
               <div>
@@ -1827,25 +1872,28 @@
                 <div class="mt-6 flex items-center gap-4">
                   <a
                     class="flex items-center gap-2 font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
-                    href=""
+                    href="https://www.linkedin.com/company/spia-log"
+                    target="_blank"
                   >
                     <iconify-icon
                       class="md:text-head24 text-head32 text-WHITE"
                       icon="ri:linkedin-fill"
                     ></iconify-icon>
                   </a>
-                  <a
+                  <!-- <a
                     class="flex items-center gap-2 font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
-                    href=""
+                    href="https://www.instagram.com/spia.log.br/"
+                    target="_blank"
                   >
                     <iconify-icon
                       class="md:text-head24 text-head32 text-WHITE"
                       icon="ri:facebook-fill"
                     ></iconify-icon>
-                  </a>
+                  </a> -->
                   <a
                     class="flex items-center gap-2 font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
-                    href=""
+                    href="https://www.instagram.com/spia.log.br/"
+                    target="_blank"
                   >
                     <iconify-icon
                       class="md:text-head24 text-head32 text-WHITE"

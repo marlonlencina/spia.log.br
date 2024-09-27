@@ -616,8 +616,16 @@ video {
   bottom: 1rem;
 }
 
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.left-6 {
+  left: 1.5rem;
 }
 
 .left-\[74px\] {
@@ -644,6 +652,10 @@ video {
   top: 96px;
 }
 
+.right-6 {
+  right: 1.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -658,6 +670,10 @@ video {
 
 .z-\[98\] {
   z-index: 98;
+}
+
+.z-\[9999999\] {
+  z-index: 9999999;
 }
 
 .z-\[99999\] {
@@ -825,6 +841,10 @@ video {
   height: 72px;
 }
 
+.h-\[84px\] {
+  height: 84px;
+}
+
 .h-\[96px\] {
   height: 96px;
 }
@@ -840,6 +860,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-12 {
@@ -860,6 +884,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-\[1248px\] {
@@ -892,6 +920,10 @@ video {
 
 .max-w-\[524px\] {
   max-width: 524px;
+}
+
+.max-w-\[564px\] {
+  max-width: 564px;
 }
 
 .max-w-\[570px\] {
@@ -1011,6 +1043,10 @@ video {
   gap: 2.87px;
 }
 
+.gap-\[6px\] {
+  gap: 6px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1121,11 +1157,6 @@ video {
   background-color: rgb(44 75 239 / var(--tw-bg-opacity));
 }
 
-.bg-GRAY_600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 10 11 / var(--tw-bg-opacity));
-}
-
 .bg-GRAY_600_0 {
   background-color: #0A0A0B00;
 }
@@ -1168,6 +1199,15 @@ video {
 .bg-\[\#19191E\] {
   --tw-bg-opacity: 1;
   background-color: rgb(25 25 30 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1A1A1F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 26 31 / var(--tw-bg-opacity));
+}
+
+.bg-\[GRAY_800\] {
+  background-color: GRAY 800;
 }
 
 .bg-opacity-10 {
@@ -1477,6 +1517,10 @@ video {
 
 .tracking-\[0\.2em\] {
   letter-spacing: 0.2em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .tracking-widest {
@@ -1850,6 +1894,16 @@ body {
   box-shadow: 0 0px 40px 10px #040404;
 }
 
+.disable-entering {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#entering-screen {
+  transition: 0.15s all linear;
+}
+
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1895,6 +1949,11 @@ body {
   --tw-bg-opacity: 0.05;
 }
 
+.hover\:text-WHITE:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:text-opacity-25:hover {
   --tw-text-opacity: 0.25;
 }
@@ -1922,6 +1981,10 @@ body {
 
 .group:hover .group-hover\:text-opacity-25 {
   --tw-text-opacity: 0.25;
+}
+
+.group:hover .group-hover\:text-opacity-45 {
+  --tw-text-opacity: 0.45;
 }
 
 @media (min-width: 640px) {
@@ -1957,6 +2020,10 @@ body {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:table {
+    display: table;
   }
 
   .md\:grid {
@@ -2139,9 +2206,5 @@ body {
 @media (min-width: 1024px) {
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
-  }
-
-  .lg\:whitespace-nowrap {
-    white-space: nowrap;
   }
 }
