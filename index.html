@@ -263,7 +263,8 @@
       <div id="container-hero-content" class="md:h-[400px]"></div>
 
       <div
-        class="w-full flex flex-col md:flex-row items-center gap-4 md:gap-8 md:h-[256px] rounded-lg mt-[64px] md:mt-[128px] overflow-hidden md:overflow-visible"
+        id="stats"
+        class="hidden w-full flex flex-col md:flex-row items-center gap-4 md:gap-8 md:h-[256px] rounded-lg mt-[64px] md:mt-[128px] overflow-hidden md:overflow-visible"
       >
         <div
           id="container-card-price"
@@ -274,6 +275,84 @@
           id="container-card-map"
           class="w-full hover:scale-105 transition-all"
         ></div>
+      </div>
+
+      <div
+        id="price-thermometer"
+        class="hidden animation-hero-entering w-full md:h-[256px] p-6 border-WHITE border-[1px] border-opacity-5 rounded-lg mt-[64px] md:mt-[128px]"
+      >
+        <div class="w-full flex items-center justify-between flex-wrap gap-2">
+          <div class="flex items-center gap-2">
+            <img src="./assets/logomark.svg" alt="" />
+            <p class="font-HEAD text-body18 text-WHITE font-thin">
+              Termômetro de preço feito por IA
+            </p>
+          </div>
+          <p class="font-HEAD text-body18 text-WHITE text-opacity-45 font-thin">
+            Baseados em dados dos últimos 90 dias
+          </p>
+        </div>
+        <div class="grid grid-cols-3 w-full mt-2">
+          <div class="w-full flex flex-col items-center gap-8">
+            <div class="flex flex-col items-center h-[96px] justify-end">
+              <div
+                class="px-6 py-4 bg-gradient-to-t from-[#118770] to-[#22AE93] flex items-center gap-2 text-WHITE rounded-lg text-body18"
+              >
+                <span class="font-medium">R$</span>
+                <p>125</p>
+              </div>
+              <div class="triangle-down-green"></div>
+            </div>
+            <div class="flex flex-col items-center gap-2 w-full">
+              <div class="h-[4px] w-full bg-WHITE bg-opacity-15"></div>
+              <p
+                class="font-BODY font-light text-sm12 md:text-body16 text-WHITE"
+              >
+                Valor <b>Mínimo</b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full flex flex-col items-center gap-8 z-20 box-shadow-alert"
+          >
+            <div class="flex flex-col items-center h-[96px] justify-end">
+              <div
+                class="px-6 py-4 bg-gradient-to-t from-[#1732BC] to-[#324EE0] flex items-center gap-2 text-WHITE rounded-lg text-head32"
+              >
+                <span class="font-medium">R$</span>
+                <p>195</p>
+              </div>
+              <div class="triangle-down-blue"></div>
+            </div>
+            <div class="flex flex-col items-center gap-2 w-full">
+              <div class="h-[4px] w-full bg-WHITE bg-opacity-25"></div>
+              <p
+                class="font-BODY font-light text-sm12 md:text-body16 text-WHITE"
+              >
+                Valor <b>Médio</b>
+              </p>
+            </div>
+          </div>
+          <div class="w-full flex flex-col items-center gap-8">
+            <div class="flex flex-col items-center h-[96px] justify-end">
+              <div
+                class="px-6 py-4 bg-gradient-to-t from-[#BC1746] to-[#DB2559] flex items-center gap-2 text-WHITE rounded-lg text-body18"
+              >
+                <span class="font-medium">R$</span>
+                <p>325</p>
+              </div>
+              <div class="triangle-down-red"></div>
+            </div>
+            <div class="flex flex-col items-center gap-2 w-full">
+              <div class="h-[4px] w-full bg-WHITE bg-opacity-35"></div>
+              <p
+                class="font-BODY font-light text-sm12 md:text-body16 text-WHITE"
+              >
+                Valor <b>Máximo</b>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div

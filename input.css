@@ -187,7 +187,6 @@ body {
   }
 }
 
-
 /* intersect */
 .intersect {
   transition: 0.25s;
@@ -266,4 +265,30 @@ body {
 }
 .intersect-show.intersect-animate-top {
   transform: translateY(0%);
+}
+
+.triangle-down-green {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #118770;
+}
+.triangle-down-blue {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #1732bc;
+}
+.triangle-down-red {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #bc1746;
+}
+
+.box-shadow-alert {
+  box-shadow: 0 0px 40px 10px #040404;
 }

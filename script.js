@@ -243,23 +243,29 @@ returntotopbtn.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const thermometer = document.querySelector("#price-thermometer");
+  const stats = document.querySelector("#stats");
+
   const heroCalls = [
     {
       dataMark: "#data-mark-1",
       title: "Preços de frete <b>voláteis?</b>",
       desc: "Agora você pode ter previsões certeiras para planejar suas operações sem sustos.",
+      card: "price-stats",
     },
     {
       dataMark: "#data-mark-2",
       title:
         "Preocupado com os <b>custos logísticos</b> impactando seu negócio?",
       desc: "Garanta previsões precisas de frete para os próximos 90 dias e tome decisões informadas com confiança.",
+      card: "price-thermometer",
     },
     {
       dataMark: "#data-mark-3",
       title:
         "Quer <b>reduzir riscos</b> e <b>maximizar lucros</b> na sua operação?",
       desc: "Antecipe os preços do frete com alta precisão e ajuste suas estratégias com dados confiáveis.",
+      card: "price-stats",
     },
   ];
   const containerHeroContent = document.querySelector(
@@ -274,6 +280,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateSlide() {
     const activeCall = heroCalls[currentIndex];
+
+    if (activeCall.card == "price-stats") {
+      stats.classList.remove("hidden");
+      thermometer.classList.add("hidden");
+    } else {
+      stats.classList.add("hidden");
+      thermometer.classList.remove("hidden");
+    }
 
     // Update title and description
     const element = `      <div class="animation-hero-entering max-w-[712px] mx-auto w-full flex flex-col items-center">
