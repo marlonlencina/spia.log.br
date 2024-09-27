@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spia</title>
+    <title>SPIA</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,17 +21,36 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon//site.webmanifest" />
   </head>
   <body>
     <header class="w-full h-[96px]">
       <div
-        class="bg-BLACK bg-opacity-75 backdrop-blur-md px-4 h-[96px] w-full fixed top-0 left-0 right-0 z-[99999]"
+        class="bg-BLACK h-[96px] w-full fixed top-0 left-0 right-0 z-[99999]"
       >
         <div
           class="max-w-[1248px] md:px-4 h-[96px] mx-auto w-full flex items-center justify-between gap-12"
         >
           <div
-            class="w-full md:w-auto flex items-center justify-between gap-12"
+            class="px-4 w-full md:w-auto flex items-center justify-between gap-12 z-[999]"
           >
             <a class="flex items-center gap-[2.87px] group" href="">
               <svg
@@ -84,8 +103,9 @@
                 />
               </svg>
             </a>
-            <button class="md:hidden">
+            <button id="menu-toggle" class="md:hidden cursor-pointer z-[99]">
               <iconify-icon
+                id="menu-toggle-icon"
                 class="text-head24 text-WHITE"
                 icon="mdi:menu"
               ></iconify-icon>
@@ -134,7 +154,8 @@
               </ul>
             </div>
             <div class="flex items-center gap-4">
-              <button
+              <a
+                href="https://app.spia.log.br"
                 class="flex items-center gap-2 px-4 h-[48px] border border-WHITE border-opacity-5 text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:bg-WHITE hover:bg-opacity-5 transition-all"
               >
                 Acessar
@@ -142,9 +163,91 @@
                   class="text-head16 text-WHITE"
                   icon="solar:user-circle-linear"
                 ></iconify-icon>
-              </button>
+              </a>
               <button
                 class="px-4 h-[48px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:opacity-85 hover:bg-BLUE_HOVER transition-all"
+              >
+                Falar com especialista
+              </button>
+            </div>
+          </div>
+          <div
+            id="sidebar"
+            class="md:hidden px-4 pt-4 pb-6 flex flex-col md:flex-row w-full h-fit items-center md:justify-between fixed top-[96px] z-50"
+          >
+            <div class="w-full">
+              <p
+                class="font-BODY text-WHITE uppercase font-thin text-body14 tracking-widest text-opacity-25"
+              >
+                Navegue entre seções
+              </p>
+            </div>
+            <div class="md:h-full w-full md:w-auto flex md:items-center mt-6">
+              <ul
+                class="w-full flex flex-col md:flex-row md:items-stretch gap-6 h-full"
+              >
+                <li
+                  class="link-sidebar md:h-full w-full md:w-auto flex items-center"
+                >
+                  <a
+                    class="font-HEAD font-thin text-head24 text-WHITE hover:text-opacity-25 transition-all h-full flex items-center w-full"
+                    href="#soluções"
+                    >Soluções</a
+                  >
+                </li>
+                <li
+                  class="link-sidebar md:h-full w-full md:w-auto flex items-center"
+                >
+                  <a
+                    class="font-HEAD font-thin text-head24 text-WHITE hover:text-opacity-25 transition-all h-full flex items-center w-full"
+                    href="#cases"
+                    >Cases</a
+                  >
+                </li>
+                <li
+                  class="link-sidebar md:h-full w-full md:w-auto flex items-center"
+                >
+                  <a
+                    class="font-HEAD font-thin text-head24 text-WHITE hover:text-opacity-25 transition-all h-full flex items-center w-full"
+                    href="#planos"
+                    >Planos</a
+                  >
+                </li>
+                <li
+                  class="link-sidebar md:h-full w-full md:w-auto flex items-center"
+                >
+                  <a
+                    class="font-HEAD font-thin text-head24 text-WHITE hover:text-opacity-25 transition-all h-full flex items-center w-full"
+                    href="#sobre-nós"
+                    >Sobre Nós</a
+                  >
+                </li>
+                <li
+                  class="link-sidebar md:h-full w-full md:w-auto flex items-center"
+                >
+                  <a
+                    class="font-HEAD font-thin text-head24 text-WHITE hover:text-opacity-25 transition-all h-full flex items-center w-full"
+                    href="#fale-com-a-gente"
+                    >Fale com a gente</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="w-full md:w-auto flex flex-row md:items-center gap-4 mt-12"
+            >
+              <a
+                href="https://app.spia.log.br"
+                class="w-full md:w-auto flex items-center justify-center gap-2 px-4 h-[48px] border border-WHITE border-opacity-5 text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:bg-WHITE hover:bg-opacity-5 transition-all"
+              >
+                Acessar
+                <iconify-icon
+                  class="text-head16 text-WHITE"
+                  icon="solar:user-circle-linear"
+                ></iconify-icon>
+              </a>
+              <button
+                class="w-full md:w-auto px-4 h-[48px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body14 rounded-[4px] hover:opacity-85 hover:bg-BLUE_HOVER transition-all"
               >
                 Falar com especialista
               </button>
@@ -155,187 +258,44 @@
     </header>
 
     <main
-      class="max-w-[1248px] px-4 mx-auto w-full h-[calc(100vh_-_96px)] flex flex-col justify-center items-center bg-BLACK"
+      class="max-w-[1248px] px-4 mx-auto w-full py-[72px] md:pt-0 md:h-[calc(100vh_-_96px)] flex flex-col justify-center items-center bg-BLACK"
     >
-      <div class="max-w-[712px] mx-auto w-full flex flex-col items-center">
+      <div id="container-hero-content" class="md:h-[400px]"></div>
+
+      <div
+        class="w-full flex flex-col md:flex-row items-center gap-4 md:gap-8 md:h-[256px] rounded-lg mt-[64px] md:mt-[128px] overflow-hidden md:overflow-visible"
+      >
         <div
-          class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
-        >
-          <iconify-icon
-            class="text-body18 text-BLUE_PRIMARY"
-            icon="solar:map-arrow-up-bold"
-          ></iconify-icon>
-          <p class="uppercase font-BODY text-WHITE text-body16">
-            A SPIA RESOLVE
-          </p>
-        </div>
-        <h1
-          class="text-center font-HEAD text-head48 text-WHITE leading-tight font-light"
-        >
-          Preços de frete voláteis?
-        </h1>
-        <p
-          class="text-center font-BODY font-normal text-head24 text-WHITE mt-4 max-w-[496px]"
-        >
-          Agora você pode ter previsões certeiras para planejar suas operações
-          sem sustos.
-        </p>
-        <div class="flex justify-center w-full mt-12">
-          <button
-            class="w-full md:w-auto px-8 h-[64px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body16 rounded-[4px] hover:bg-BLUE_HOVER transition-all"
-          >
-            Falar com especialista
-          </button>
-        </div>
+          id="container-card-price"
+          class="md:max-w-[488px] w-full hover:scale-105 transition-all"
+        ></div>
+
+        <div
+          id="container-card-map"
+          class="w-full hover:scale-105 transition-all"
+        ></div>
       </div>
 
       <div
-        class="w-full flex flex-col md:flex-row items-center gap-8 h-[256px] rounded-lg mt-[128px]"
+        class="container-markers flex items-center justify-center gap-1 w-full pt-8"
       >
         <div
-          class="flex flex-col rounded-xl border border-WHITE border-opacity-5 max-w-[488px] w-full h-[256px] hover:border-opacity-10 transition-all hover:scale-105 overflow-hidden"
+          id="data-mark-1"
+          class="marker h-[4px] w-6 transition-all py-4 cursor-pointer"
         >
-          <div class="p-6 flex-1">
-            <div class="flex items-center gap-2">
-              <img src="./assets/logomark.svg" alt="" />
-              <p class="font-HEAD text-body18 text-WHITE font-thin">
-                Precificação feita por Inteligência Artificial
-              </p>
-            </div>
-            <div class="mt-6 flex items-center justify-between gap-4">
-              <div class="flex flex-col gap-1">
-                <span
-                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
-                  >Ponto de origem</span
-                >
-                <p class="font-BODY text-WHITE text-body14 font-light">
-                  Belo Horizonte - MG
-                </p>
-              </div>
-              <div class="flex flex-col gap-1">
-                <span
-                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
-                  >Ponto de origem</span
-                >
-                <p class="font-BODY text-WHITE text-body14 font-light">
-                  Belo Horizonte - MG
-                </p>
-              </div>
-              <div class="flex flex-col gap-1">
-                <span
-                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
-                  >Peso (t)</span
-                >
-                <p class="font-BODY text-WHITE text-body14 font-light">
-                  3 Toneladas
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="px-6 flex-1 bg-WHITE bg-opacity-5 flex items-center w-full"
-          >
-            <div class="flex items-center justify-between gap-4 w-full">
-              <div class="flex flex-col gap-1">
-                <span
-                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
-                  >Distância (Km)</span
-                >
-                <p class="font-BODY text-WHITE text-body14 font-light">
-                  1.271Km
-                </p>
-              </div>
-              <div class="flex flex-col gap-1">
-                <span
-                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
-                  >Tempo estimado</span
-                >
-                <p class="font-BODY text-WHITE text-body14 font-light">
-                  16h14min
-                </p>
-              </div>
-              <div class="flex flex-col gap-1">
-                <span
-                  class="font-BODY text-WHITE text-opacity-45 text-body14 font-light"
-                  >Valor (P/t)</span
-                >
-                <p class="font-BODY text-WHITE text-body14 font-light">
-                  R$ 192
-                  <span class="text-sm12 text-WHITE text-opacity-45"
-                    >/tonelada</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="h-[4px] w-6 bg-WHITE opacity-15"></div>
         </div>
-
         <div
-          class="overflow-hidden flex items-stretch max-w-[696px] rounded-lg border border-WHITE border-opacity-5 bg-opacity-5 w-full h-[256px] hover:border-opacity-10 transition-all hover:scale-105"
+          id="data-mark-2"
+          class="marker h-[4px] w-6 transition-all py-4 cursor-pointer"
         >
-          <div class="bg-WHITE bg-opacity-5 w-full h-[256px]">
-            <div class="pointer-events-none w-full relative h-[256px]">
-              <img
-                src="./assets/florianopolis-to-belo-horizonte-map.svg"
-                alt=""
-              />
-              <div
-                class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-[#111111] to-[#11111100]"
-              >
-                <div>
-                  <span
-                    class="font-BODY text-WHITE text-sm12 font-normal uppercase"
-                    >Valor (R$)</span
-                  >
-                  <div class="flex items-center gap-3">
-                    <span class="font-BODY text-head32 text-WHITE font-medium"
-                      >R$</span
-                    >
-                    <p class="font-BODY text-head32 text-WHITE font-light">
-                      10.500,00
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full p-6 h-[256px]">
-            <div class="flex flex-col w-full relative overflow-hidden">
-              <div>
-                <p class="font-BODY text-WHITE font-light text-body18">
-                  Predição dos próximos 90 dias
-                </p>
-                <span
-                  class="font-BODY text-WHITE text-opacity-45 font-light text-body14"
-                  >Baseada em dados reais</span
-                >
-              </div>
-              <div>
-                <img src="./assets/chart-tendencia.svg" alt="" srcset="" />
-              </div>
-              <div
-                class="flex items-center gap-4 absolute w-full bg-WHITE bg-opacity-5 bottom-0 backdrop-blur-sm rounded-[4px] overflow-hidden"
-              >
-                <div
-                  class="h-[64px] w-[64px] bg-BLUE_PRIMARY grid place-content-center shrink-0"
-                >
-                  <iconify-icon
-                    class="text-head24 text-WHITE"
-                    icon="solar:chat-round-money-linear"
-                  ></iconify-icon>
-                </div>
-                <div>
-                  <p class="font-BODY text-WHITE text-body14 font-normal">
-                    Tendência de <b>aumento</b>
-                  </p>
-                  <span
-                    class="font-BODY text-WHITE text-opacity-45 text-sm12 font-light"
-                    >Previsão aumento nos próximos 7 dias</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="h-[4px] w-6 bg-WHITE opacity-15"></div>
+        </div>
+        <div
+          id="data-mark-3"
+          class="marker h-[4px] w-6 transition-all py-4 cursor-pointer"
+        >
+          <div class="h-[4px] w-6 bg-WHITE opacity-15"></div>
         </div>
       </div>
     </main>
@@ -435,7 +395,7 @@
         </div>
 
         <div
-          class="card card-fretes w-full border-WHITE bg-GRAY_800 rounded-lg overflow-hidden mt-16 md:p-14 bg-bg-preco-futuro-do-frete bg-cover"
+          class="animation-hero-entering card card-fretes w-full border-WHITE bg-GRAY_800 rounded-lg overflow-hidden mt-16 md:p-14 bg-bg-preco-futuro-do-frete bg-cover"
         >
           <img
             class="md:hidden h-[216px] w-full object-cover"
@@ -485,7 +445,7 @@
         </div>
 
         <div
-          class="card card-veiculos w-full bg-GRAY_800 rounded-lg overflow-hidden mt-16 md:p-14 bg-bg-demandas-de-veiculos-com-ia bg-cover"
+          class="animation-hero-entering card card-veiculos w-full bg-GRAY_800 rounded-lg overflow-hidden mt-16 md:p-14 bg-bg-demandas-de-veiculos-com-ia bg-cover"
         >
           <img
             class="md:hidden h-[216px] w-full object-cover"
@@ -839,12 +799,14 @@
       </div>
     </section>
 
-    <div
+    <section
       id="planos"
       class="bg-GRAY_700 border-t border-t-WHITE border-opacity-5"
     >
       <div class="max-w-[1248px] mx-auto w-full py-[124px]">
-        <div class="flex items-center flex-col max-w-[524px] mx-auto w-full">
+        <div
+          class="flex items-center flex-col max-w-[524px] mx-auto w-full px-4"
+        >
           <div
             class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
           >
@@ -1408,7 +1370,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <section
       id="sobre-nós"
@@ -1465,7 +1427,7 @@
             </p>
           </div>
           <button
-            class="mt-12 md:px-8 px-2 md:h-[64px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body16 rounded-[4px] hover:bg-BLUE_HOVER transition-all"
+            class="w-full md:w-auto mt-12 md:px-8 px-2 h-[64px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body16 rounded-[4px] hover:bg-BLUE_HOVER transition-all"
           >
             Falar com especialista
           </button>
@@ -1474,7 +1436,7 @@
     </section>
 
     <section id="fale-com-a-gente" class="bg-BLACK">
-      <div class="max-w-[1248px] w-full py-[124px] mx-auto">
+      <div class="max-w-[1248px] px-4 w-full py-[124px] mx-auto">
         <div class="flex items-center flex-col max-w-[524px] mx-auto w-full">
           <div
             class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
@@ -1494,14 +1456,29 @@
           </h3>
         </div>
         <div
-          class="flex flex-col md:flex-row items-center justify-between mt-[64px]"
+          class="flex flex-col md:flex-row items-center justify-between mt-[80px]"
         >
-          <div class="max-w-[592px] w-full grid place-content-center">
+          <div
+            class="max-w-[592px] w-full place-content-center hidden md:grid relative"
+          >
             <img src="./assets/side-image-contato.png" alt="" srcset="" />
+            <img
+              class="absolute bottom-0 left-[74px]"
+              src="./assets/logomark-spia-gradient.svg"
+              alt=""
+              srcset=""
+            />
           </div>
           <div
-            class="max-w-[484px] h-[564px] w-full p-12 border border-STROKE rounded-lg"
-          ></div>
+            class="max-w-[484px] h-auto w-full p-12 border border-STROKE rounded-lg bg-WHITE"
+          >
+            <div
+              class="pipedriveWebForms order-first md:order-2 mb-16 md:mb-0 flex flex-col max-w-[487px] w-full"
+              data-pd-webforms="https://webforms.pipedrive.com/f/nOybaElsTet2l26jLAId4kttGKcKd2E1vUrOt6Pf1eBYes4BveYDG0QYVQiYnS3"
+            >
+              <script src="https://webforms.pipedrive.com/f/loader"></script>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1600,10 +1577,10 @@
         </div>
 
         <div
-          class="-mb-[180px] w-full h-[384px] bg-BLUE_PRIMARY mt-24 rounded-lg bg-bg-call-to-action bg-cover p-16 flex items-center justify-end"
+          class="-mb-[180px] w-full h-[384px] bg-BLUE_PRIMARY mt-24 rounded-lg bg-bg-call-to-action-mob md:bg-bg-call-to-action bg-cover p-4 md:p-16 flex items-center justify-center md:justify-end"
         >
           <h5
-            class="text-end font-HEAD text-head40 text-WHITE font-thin max-w-[412px]"
+            class="text-center md:text-end font-HEAD text-head32 md:text-head40 text-WHITE font-thin max-w-[412px] w-full"
           >
             A maior plataforma de
             <b class="font-light">precificação de frete do agronegócio</b> do
@@ -1621,7 +1598,7 @@
           <div class="max-w-[488px] w-full">
             <img class="" src="./assets/logo-mono.svg" alt="" />
             <p
-              class="font-BODY text-body16 text-WHITE font-normal mt-8 max-w-[384px]"
+              class="font-BODY md:text-body16 text-body18 text-WHITE font-normal mt-8 max-w-[384px]"
             >
               A SPIA® é uma solução de ciência de dados que trabalha com
               algoritmos de predição dos preços de fretes agrícolas para SOJA,
@@ -1630,54 +1607,56 @@
           </div>
           <div class="flex flex-wrap lg:flex-nowrap gap-8 w-full">
             <div class="max-w-[384px] w-full">
-              <span class="font-BODY text-body16 text-WHITE font-medium"
+              <span
+                class="font-BODY text-body16 text-opacity-45 md:text-opacity-100 text-WHITE font-normal"
                 >Navegue</span
               >
               <div class="mt-6 flex flex-col gap-4">
                 <a
-                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  class="font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                   href="#soluções"
                   >Soluções</a
                 >
                 <a
-                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  class="font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                   href="#cases"
                   >Cases</a
                 >
                 <a
-                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  class="font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                   href="#planos"
                   >Planos</a
                 >
                 <a
-                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  class="font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                   href="#sobre-nós"
                   >Sobre Nós</a
                 >
                 <a
-                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  class="font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                   href="#fale-com-a-gente"
                   >Fale com a gente</a
                 >
               </div>
             </div>
             <div class="max-w-[384px] w-full">
-              <span class="font-BODY text-body16 text-WHITE font-medium"
+              <span
+                class="font-BODY text-body16 text-opacity-45 md:text-opacity-100 text-WHITE font-normal"
                 >Suporte</span
               >
               <div class="mt-6 flex flex-col gap-4">
                 <a
-                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  class="font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                   href=""
                   >Termos de uso</a
                 >
                 <a
-                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  class="font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                   href=""
                   >Políticas de privacidade</a
                 >
                 <a
-                  class="font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                  class="font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                   href=""
                   >FAQ</a
                 >
@@ -1685,12 +1664,13 @@
             </div>
             <div class="max-w-[384px] w-full flex flex-col gap-12">
               <div>
-                <span class="font-BODY text-body16 text-WHITE font-medium"
+                <span
+                  class="font-BODY text-body16 text-opacity-45 md:text-opacity-100 text-WHITE font-normal"
                   >Fale conosco</span
                 >
                 <div class="mt-6 flex flex-col gap-4">
                   <a
-                    class="flex items-center gap-2 font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                    class="flex items-center gap-2 font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                     href=""
                   >
                     <iconify-icon
@@ -1700,7 +1680,7 @@
                     comercial@spialog,com</a
                   >
                   <a
-                    class="flex items-center gap-2 font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                    class="flex items-center gap-2 font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                     href=""
                   >
                     <iconify-icon
@@ -1712,34 +1692,35 @@
                 </div>
               </div>
               <div>
-                <span class="font-BODY text-body16 text-WHITE font-medium"
+                <span
+                  class="font-BODY text-body16 text-opacity-45 md:text-opacity-100 text-WHITE font-normal"
                   >Siga nossas redes</span
                 >
                 <div class="mt-6 flex items-center gap-4">
                   <a
-                    class="flex items-center gap-2 font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                    class="flex items-center gap-2 font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                     href=""
                   >
                     <iconify-icon
-                      class="text-head24 text-WHITE"
+                      class="md:text-head24 text-head32 text-WHITE"
                       icon="ri:linkedin-fill"
                     ></iconify-icon>
                   </a>
                   <a
-                    class="flex items-center gap-2 font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                    class="flex items-center gap-2 font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                     href=""
                   >
                     <iconify-icon
-                      class="text-head24 text-WHITE"
+                      class="md:text-head24 text-head32 text-WHITE"
                       icon="ri:facebook-fill"
                     ></iconify-icon>
                   </a>
                   <a
-                    class="flex items-center gap-2 font-HEAD text-WHITE text-body16 font-thin hover:opacity-25 transition-all"
+                    class="flex items-center gap-2 font-HEAD text-WHITE md:text-body16 text-head24 font-thin hover:opacity-25 transition-all"
                     href=""
                   >
                     <iconify-icon
-                      class="text-head24 text-WHITE"
+                      class="md:text-head24 text-head32 text-WHITE"
                       icon="mdi:instagram"
                     ></iconify-icon>
                   </a>
@@ -1748,7 +1729,9 @@
             </div>
           </div>
         </div>
-        <div class="w-full pt-[124px] flex justify-between items-center">
+        <div
+          class="w-full pt-[124px] flex flex-col md:flex-row md:justify-between md:items-center"
+        >
           <div>
             <p class="font-BODY text-WHITE text-body16 font-normal">
               Todos direitos da páginas são reservados a SPIA.log® 2024
@@ -1756,7 +1739,8 @@
           </div>
           <div>
             <button
-              class="h-16 w-16 bg-WHITE bg-opacity-5 rounded-md grid place-content-center hover:bg-opacity-10 transition-all"
+              id="return-to-top-btn"
+              class="h-16 w-16 bg-WHITE bg-opacity-5 rounded-md grid place-content-center hover:bg-opacity-10 transition-all mt-12 md:mt-0"
             >
               <iconify-icon
                 class="text-body16 text-WHITE"
@@ -1770,8 +1754,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="./script.js"></script>
+    <script src="./changeLocation.js"></script>
 
     <script>
       const swiper = new Swiper(".swiper", {

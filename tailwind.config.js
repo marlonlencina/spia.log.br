@@ -52,6 +52,7 @@ module.exports = {
         "bg-demandas-de-veiculos-com-ia":
           "url('assets/bg-demandas-de-veiculos-com-ia.png')",
         "bg-call-to-action": "url('assets/call-to-action-banner.png')",
+        "bg-call-to-action-mob": "url('assets/call-to-action-banner-mob.png')",
         "bg-mapa-do-brasil": "url('assets/bg-mapa-do-brasil-vetor.svg')",
       },
     },

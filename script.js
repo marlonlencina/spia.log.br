@@ -187,3 +187,154 @@ data.forEach((row) => {
   insertTableRow(row.module, row.business, row.premium, row.enterprise);
 });
 //insertTableRow('Setup', 'R$ 6.500,00', 'R$ 6.500,00', 'Apartir de <br />R$ 25.000,00')
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const menuToggleIcon = document.getElementById("menu-toggle-icon");
+  const sidebar = document.getElementById("sidebar");
+  const linksSidebar = document.querySelectorAll(".link-sidebar");
+
+  let isOpened = false;
+
+  menuToggle.addEventListener("click", function (e) {
+    console.log(e);
+    console.log(menuToggle);
+
+    if (isOpened) {
+      isOpened = false;
+      menuToggleIcon.icon = "mdi:menu";
+      sidebar.classList.remove("open");
+    } else {
+      isOpened = true;
+      menuToggleIcon.icon = "mdi:close";
+      sidebar.classList.add("open");
+    }
+  });
+
+  linksSidebar.forEach((link) => {
+    link.addEventListener("click", function () {
+      if (isOpened) {
+        isOpened = false;
+        menuToggleIcon.setAttribute("icon", "mdi:menu");
+        sidebar.classList.remove("open");
+      }
+    });
+  });
+
+  // Optional: close sidebar when clicking outside
+  document.addEventListener("click", function (event) {
+    if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+      if (isOpened) {
+        isOpened = false;
+        menuToggleIcon.setAttribute("icon", "mdi:menu");
+        sidebar.classList.remove("open");
+      }
+    }
+  });
+});
+
+const returntotopbtn = document.querySelector("#return-to-top-btn");
+
+returntotopbtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const heroCalls = [
+    {
+      dataMark: "#data-mark-1",
+      title: "Preços de frete <b>voláteis?</b>",
+      desc: "Agora você pode ter previsões certeiras para planejar suas operações sem sustos.",
+    },
+    {
+      dataMark: "#data-mark-2",
+      title:
+        "Preocupado com os <b>custos logísticos</b> impactando seu negócio?",
+      desc: "Garanta previsões precisas de frete para os próximos 90 dias e tome decisões informadas com confiança.",
+    },
+    {
+      dataMark: "#data-mark-3",
+      title:
+        "Quer <b>reduzir riscos</b> e <b>maximizar lucros</b> na sua operação?",
+      desc: "Antecipe os preços do frete com alta precisão e ajuste suas estratégias com dados confiáveis.",
+    },
+  ];
+  const containerHeroContent = document.querySelector(
+    "#container-hero-content"
+  );
+  const markers = document.querySelectorAll(".marker");
+
+  console.log(containerHeroContent);
+
+  let currentIndex = 0;
+  let slideInterval;
+
+  function updateSlide() {
+    const activeCall = heroCalls[currentIndex];
+
+    // Update title and description
+    const element = `      <div class="animation-hero-entering max-w-[712px] mx-auto w-full flex flex-col items-center">
+    <div
+      class="flex items-center gap-2 border border-WHITE border-opacity-5 px-6 py-3 rounded-full mb-4 hover:bg-WHITE hover:bg-opacity-5 transition-all"
+    >
+      <iconify-icon
+        class="text-body18 text-BLUE_PRIMARY"
+        icon="solar:map-arrow-up-bold"
+      ></iconify-icon>
+      <p class="uppercase font-BODY text-WHITE text-body16">
+        A SPIA RESOLVE
+      </p>
+    </div>
+    <h1
+      id="hero-title"
+      class="text-center font-HEAD text-head48 text-WHITE leading-tight font-light"
+    >
+      ${activeCall.title}
+    </h1>
+    <p
+      id="hero-desc"
+      class="text-center font-BODY font-normal text-head24 text-WHITE mt-4 max-w-[584px]"
+    >
+    ${activeCall.desc}
+    </p>
+    <div class="flex justify-center w-full mt-12">
+      <button
+        class="w-full md:w-auto px-8 h-[64px] bg-BLUE_PRIMARY text-WHITE font-BODY font-semibold text-body16 rounded-[4px] hover:bg-BLUE_HOVER transition-all"
+      >
+        Falar com especialista
+      </button>
+    </div>
+  </div>`;
+
+    containerHeroContent.innerHTML = element; // Update marker classes
+    markers.forEach((mark) => mark.classList.remove("data-mark-active"));
+    document
+      .querySelector(activeCall.dataMark)
+      .classList.add("data-mark-active");
+
+    // Move to the next slide, loop back if at the end
+    currentIndex = (currentIndex + 1) % heroCalls.length;
+  }
+
+  // Function to reset the slide interval
+  function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(updateSlide, 8000);
+  }
+
+  // Add click event listeners to each marker
+  markers.forEach((marker, index) => {
+    marker.addEventListener("click", function () {
+      currentIndex = index;
+      updateSlide(); // Update slide based on the clicked marker
+      resetInterval(); // Reset the interval timer
+    });
+  });
+
+  // Initial update and start the interval
+  updateSlide();
+  slideInterval = setInterval(updateSlide, 8000);
+});
