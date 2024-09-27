@@ -290,13 +290,13 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     <h1
       id="hero-title"
-      class="text-center font-HEAD text-head48 text-WHITE leading-tight font-light"
+      class="text-center font-HEAD text-head32 md:text-head48 text-WHITE leading-tight font-light"
     >
       ${activeCall.title}
     </h1>
     <p
       id="hero-desc"
-      class="text-center font-BODY font-normal text-head24 text-WHITE mt-4 max-w-[584px]"
+      class="text-center font-BODY font-normal text-body18 md:text-head24 text-WHITE mt-4 max-w-[584px]"
     >
     ${activeCall.desc}
     </p>

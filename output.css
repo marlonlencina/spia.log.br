@@ -1381,6 +1381,15 @@ video {
   font-size: 0.875rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-sm10 {
+  font-size: 0.625rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -1767,12 +1776,12 @@ body {
     margin-bottom: 0px;
   }
 
-  .md\:mt-\[128px\] {
-    margin-top: 128px;
-  }
-
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-\[128px\] {
+    margin-top: 128px;
   }
 
   .md\:flex {
@@ -1935,8 +1944,8 @@ body {
     font-size: 0.875rem;
   }
 
-  .md\:text-head32 {
-    font-size: 2rem;
+  .md\:text-head48 {
+    font-size: 3rem;
   }
 
   .md\:text-opacity-100 {

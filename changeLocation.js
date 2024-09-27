@@ -78,15 +78,15 @@ function updateCardContent() {
         </div>
         <div class="mt-6 flex items-center justify-between gap-4">
           <div id="local-origin" class="flex flex-col gap-1">
-            <span class="font-BODY text-WHITE text-opacity-45 text-body14 font-light">Ponto de origem</span>
+            <span class="font-BODY text-WHITE text-opacity-45 text-sm12 md:text-body14 font-light">Ponto de origem</span>
             <p class="font-BODY text-WHITE text-body14 font-light">${activeTransport.localOrigin}</p>
           </div>
           <div id="local-destiny" class="flex flex-col gap-1">
-            <span class="font-BODY text-WHITE text-opacity-45 text-body14 font-light">Ponto de destino</span>
+            <span class="font-BODY text-WHITE text-opacity-45 text-sm12 md:text-body14 font-light">Ponto de destino</span>
             <p class="font-BODY text-WHITE text-body14 font-light">${activeTransport.localDestiny}</p>
           </div>
           <div id="transport-weight" class="flex flex-col gap-1">
-            <span class="font-BODY text-WHITE text-opacity-45 text-body14 font-light">Peso (t)</span>
+            <span class="font-BODY text-WHITE text-opacity-45 text-sm12 md:text-body14 font-light">Peso (t)</span>
             <p class="font-BODY text-WHITE text-body14 font-light">${activeTransport.transportWeightValue} Toneladas</p>
           </div>
         </div>
@@ -94,15 +94,15 @@ function updateCardContent() {
       <div class="p-6 md:px-6 flex-1 bg-WHITE bg-opacity-5 flex items-center w-full">
         <div class="flex items-center justify-between gap-4 w-full">
           <div id="local-distance" class="flex flex-col gap-1">
-            <span class="font-BODY text-WHITE text-opacity-45 text-body14 font-light">Distância (Km)</span>
+            <span class="font-BODY text-WHITE text-opacity-45 text-sm12 md:text-body14 font-light">Distância (Km)</span>
             <p class="font-BODY text-WHITE text-body14 font-light">${activeTransport.distanceValue}Km</p>
           </div>
           <div class="flex flex-col gap-1">
-            <span id="transport-time" class="font-BODY text-WHITE text-opacity-45 text-body14 font-light">Tempo estimado</span>
+            <span id="transport-time" class="font-BODY text-WHITE text-opacity-45 text-sm12 md:text-body14 font-light">Tempo estimado</span>
             <p class="font-BODY text-WHITE text-body14 font-light">${activeTransport.time}</p>
           </div>
           <div id="ton-value" class="flex flex-col gap-1">
-            <span class="font-BODY text-WHITE text-opacity-45 text-body14 font-light">Valor (P/t)</span>
+            <span class="font-BODY text-WHITE text-opacity-45 text-sm12 md:text-body14 font-light">Valor (P/t)</span>
             <p class="font-BODY text-WHITE text-body14 font-light">
               R$ ${activeTransport.tonPrice} 
               <span class="text-sm12 text-WHITE text-opacity-45">/tonelada</span>
