@@ -190,7 +190,6 @@ body {
 
 /* intersect */
 .intersect {
-  overflow: hidden !important;
   transition: 0.25s;
 }
 

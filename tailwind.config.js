@@ -12,6 +12,7 @@ module.exports = {
       GRAY_800: "#070707",
       GRAY_700: "#0A0A0A",
       GRAY_600: "#0A0A0B",
+      GRAY_500: "#0F0F0F",
       GRAY_600_0: "#0A0A0B00",
       BLUE_OPACITY_TABLE: "#1732BC",
       GREEN_OPACITY_TABLE: "#0B967A",

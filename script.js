@@ -139,7 +139,7 @@ const insertTableRow = (
 ) => {
   const elementRow = `
   <div class="container-table-row">
-                <div class="px-4 h-[72px] flex items-center gap-4">
+                <div class="px-4 h-[72px] flex items-center gap-4 ">
                   <span
                     class="font-BODY text-WHITE text-opacity-45 font-light text-body16"
                     >Módulo</span
@@ -150,7 +150,7 @@ const insertTableRow = (
                 </div>
                 <div class="flex">
                   <div
-                    class="w-full bg-BLUE_OPACITY_TABLE bg-opacity-5 grid place-content-center h-[72px] hover:bg-opacity-10 transition-all"
+                    class="w-full bg-BLUE_OPACITY_TABLE bg-opacity-10 grid place-content-center h-[72px] hover:bg-opacity-10 transition-all"
                   >
                     <p
                       class="font-BODY text-WHITE text-body14 font-light h-full text-center"
@@ -159,7 +159,7 @@ const insertTableRow = (
                     </p>
                   </div>
                   <div
-                    class="w-full bg-GREEN_OPACITY_TABLE bg-opacity-5 grid place-content-center h-[72px] hover:bg-opacity-10 transition-all"
+                    class="w-full bg-GREEN_OPACITY_TABLE bg-opacity-10 grid place-content-center h-[72px] hover:bg-opacity-10 transition-all"
                   >
                     <p
                       class="font-BODY text-WHITE text-body14 font-light h-full text-center"
@@ -168,7 +168,7 @@ const insertTableRow = (
                     </p>
                   </div>
                   <div
-                    class="w-full bg-GRAY_OPACITY_TABLE bg-opacity-5 grid place-content-center h-[72px] hover:bg-opacity-10 transition-all"
+                    class="w-full bg-GRAY_OPACITY_TABLE bg-opacity-10 grid place-content-center h-[72px] hover:bg-opacity-10 transition-all"
                   >
                     <p
                       class="font-BODY text-WHITE text-body14 font-light h-full text-center"
