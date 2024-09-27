@@ -14,9 +14,7 @@ const elementsObserver = document.querySelectorAll(".intersect");
 elementsObserver.forEach((element) => observerWeb.observe(element));
 
 const header = document.querySelector("#header");
-console.log(header);
 const handleScroll = () => {
-  console.log(window.scrollY);
   if (window.scrollY > 96) {
     header.classList.add("header-minimal");
   } else {

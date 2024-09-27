@@ -592,6 +592,10 @@ video {
   pointer-events: none;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -650,10 +654,6 @@ video {
 
 .top-\[96px\] {
   top: 96px;
-}
-
-.right-6 {
-  right: 1.5rem;
 }
 
 .z-10 {
@@ -1047,6 +1047,15 @@ video {
   gap: 6px;
 }
 
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1437,6 +1446,10 @@ video {
 
 .text-start {
   text-align: start;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-BODY {

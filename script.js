@@ -10,13 +10,9 @@ const cardVeiculos = document.querySelector(".card-veiculos");
 buttonCardFretes.classList.add("card-active");
 cardVeiculos.classList.add("card-inactive");
 
-console.log();
-
-console.log("js loaded.");
 btnCards.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     const query = e.target.dataset.query;
-    console.log(query);
     if (query == "veiculos") {
       cardVeiculos.classList.remove("card-inactive");
       cardFretes.classList.add("card-inactive");
@@ -197,9 +193,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let isOpened = false;
 
   menuToggle.addEventListener("click", function (e) {
-    console.log(e);
-    console.log(menuToggle);
-
     if (isOpened) {
       isOpened = false;
       menuToggleIcon.icon = "mdi:menu";
@@ -272,8 +265,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "#container-hero-content"
   );
   const markers = document.querySelectorAll(".marker");
-
-  console.log(containerHeroContent);
 
   let currentIndex = 0;
   let slideInterval;
@@ -353,3 +344,52 @@ function fadeOutScreen() {
 }
 
 fadeOutScreen();
+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+// Intersection Observer callback
+const observerCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      if (entry.target.id === "nrotas-container") {
+        const rotas = document.getElementById("nrotas");
+        animateValue(rotas, 0, 31, 5000); // Trigger animation for #nrotas-container
+      }
+      if (entry.target.id === "nprecisao-container") {
+        const precisao = document.getElementById("nprecisao");
+        animateValue(precisao, 0, 91, 5000); // Trigger animation for #nprecisao-container
+      }
+      if (entry.target.id === "nhoras-container") {
+        const horas = document.getElementById("nhoras");
+        animateValue(horas, 0, 24, 5000); // Trigger animation for #nprecisao-container
+      }
+      observer.unobserve(entry.target); // Stop observing after animation is triggered
+    }
+  });
+};
+
+// Set up Intersection Observer
+const observerOptions = {
+  root: null, // relative to the viewport
+  threshold: 0.1, // Trigger when at least 10% of the element is visible
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+const rotascontainer = document.getElementById("nrotas-container");
+const precisaoContainer = document.getElementById("nprecisao-container");
+const nhorascontainer = document.getElementById("nhoras-container");
+console.log(nhorascontainer);
+observer.observe(precisaoContainer);
+observer.observe(nhorascontainer);
+observer.observe(rotascontainer);

@@ -420,7 +420,8 @@
         class="w-full grid md:grid-cols-3 gap-8 intersect intersect-hidden intersect-animate-bottom"
       >
         <div
-          class="intersect-transition-40 bg-GRAY_800 w-full rounded-lg p-8 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
+          id="nrotas-container"
+          class="bg-GRAY_800 w-full rounded-lg p-8 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
         >
           <div class="w-fullgap-3">
             <iconify-icon
@@ -428,7 +429,8 @@
               icon="solar:map-linear"
             ></iconify-icon>
             <h2 class="font-BODY text-head32 text-WHITE font-normal mt-2">
-              +31 Milhões de rotas
+              +<span id="nrotas">0</span>
+              Milhões de rotas
             </h2>
           </div>
           <p
@@ -438,6 +440,7 @@
           </p>
         </div>
         <div
+          id="nprecisao-container"
           class="intersect-transition-40 bg-GRAY_800 w-full rounded-lg p-8 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
         >
           <div class="w-ful gap-3">
@@ -446,7 +449,7 @@
               icon="solar:compass-linear"
             ></iconify-icon>
             <h2 class="font-BODY text-head32 text-WHITE font-normal mt-2">
-              +96% de precisão
+              +<span id="nprecisao">0</span>% de precisão
             </h2>
           </div>
           <p
@@ -456,6 +459,7 @@
           </p>
         </div>
         <div
+          id="nhoras-container"
           class="intersect-transition-40 bg-GRAY_800 w-full rounded-lg p-8 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
         >
           <div class="w-ful gap-3">
@@ -464,7 +468,7 @@
               icon="solar:routing-2-linear"
             ></iconify-icon>
             <h2 class="font-BODY text-head32 text-WHITE font-normal mt-2">
-              24/7 Disponível
+              <span id="nhoras">0</span>/7 Disponível
             </h2>
           </div>
           <p
@@ -750,7 +754,7 @@
           </div>
         </div>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 py-[124px]">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12 py-[124px]">
           <div
             class="intersect intersect-hidden intersect-animate-bottom intersect-transition-40"
           >
@@ -763,11 +767,9 @@
                   icon="solar:clock-square-linear"
                 ></iconify-icon>
               </div>
-              <p class="font-HEAD text-body20 text-WHITE font-light">Tempo</p>
+              <p class="font-HEAD text-head24 text-WHITE font-thin">Tempo</p>
             </div>
-            <p
-              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
-            >
+            <p class="mt-4 font-BODY text-body20 text-WHITE font-light">
               De 1h30 para 8 segundos na precificação de frete. Tome decisões
               estratégicas com rapidez e segurança.  
             </p>
@@ -784,13 +786,11 @@
                   icon="solar:box-linear"
                 ></iconify-icon>
               </div>
-              <p class="font-HEAD text-body20 text-WHITE font-light">
+              <p class="font-HEAD text-head24 text-WHITE font-thin">
                 Rastreabilidade
               </p>
             </div>
-            <p
-              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
-            >
+            <p class="mt-4 font-BODY text-body20 text-WHITE font-light">
               Mais controle e rastreabilidade entre áreas comercial e logística.
             </p>
           </div>
@@ -806,11 +806,9 @@
                   icon="solar:chat-round-money-linear"
                 ></iconify-icon>
               </div>
-              <p class="font-HEAD text-body20 text-WHITE font-light">Custo</p>
+              <p class="font-HEAD text-head24 text-WHITE font-thin">Custo</p>
             </div>
-            <p
-              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
-            >
+            <p class="mt-4 font-BODY text-body20 text-WHITE font-light">
               Reduzimos custos na contratação em até 20% com previsões precisas
               e otimização de recursos.
             </p>
@@ -827,13 +825,9 @@
                   icon="solar:chandelier-bold"
                 ></iconify-icon>
               </div>
-              <p class="font-HEAD text-body20 text-WHITE font-light">
-                Decisivo
-              </p>
+              <p class="font-HEAD text-head24 text-WHITE font-thin">Decisivo</p>
             </div>
-            <p
-              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
-            >
+            <p class="mt-4 font-BODY text-body20 text-WHITE font-light">
               Contribui para tomada de decisões importantes para o processo
               logístico.
             </p>
@@ -850,13 +844,9 @@
                   icon="solar:compass-big-linear"
                 ></iconify-icon>
               </div>
-              <p class="font-HEAD text-body20 text-WHITE font-light">
-                Precisão
-              </p>
+              <p class="font-HEAD text-head24 text-WHITE font-thin">Precisão</p>
             </div>
-            <p
-              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
-            >
+            <p class="mt-4 font-BODY text-body20 text-WHITE font-light">
               Erro médio de apenas 4%. Superando previsões humanas.
             </p>
           </div>
@@ -872,13 +862,11 @@
                   icon="solar:chat-round-money-linear"
                 ></iconify-icon>
               </div>
-              <p class="font-HEAD text-body20 text-WHITE font-light">
+              <p class="font-HEAD text-head24 text-WHITE font-thin">
                 Compliance
               </p>
             </div>
-            <p
-              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
-            >
+            <p class="mt-4 font-BODY text-body20 text-WHITE font-light">
               Rastreabilidade do preço orçado X cotado X executado conectado
               direto com o CTe.
             </p>
@@ -895,11 +883,9 @@
                   icon="solar:buildings-2-linear"
                 ></iconify-icon>
               </div>
-              <p class="font-HEAD text-body20 text-WHITE font-light">Mercado</p>
+              <p class="font-HEAD text-head24 text-WHITE font-thin">Mercado</p>
             </div>
-            <p
-              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
-            >
+            <p class="mt-4 font-BODY text-body20 text-WHITE font-light">
               Visibilidade do preço praticado no mercado.
             </p>
           </div>
@@ -908,28 +894,26 @@
           >
             <div class="flex items-center gap-4">
               <div
-                class="bg-BLUE_PRIMARY h-12 w-12 rounded-sm grid place-content-center"
+                class="bg-WHITE bg-opacity-5 h-12 w-12 rounded-sm grid place-content-center"
               >
                 <iconify-icon
                   class="text-head24 text-WHITE"
                   icon="solar:arrow-right-down-linear"
                 ></iconify-icon>
               </div>
-              <p class="font-HEAD text-body20 text-WHITE font-light">
+              <p class="font-HEAD text-head24 text-WHITE font-thin">
                 Saiba mais
               </p>
             </div>
-            <p
-              class="mt-4 font-BODY text-body18 md:text-sm14 text-WHITE font-light"
-            >
+            <p class="mt-4 font-BODY text-body20 text-WHITE font-light">
               Converse com um de nossos especialista e entenda como podemos
               revolucionar seu negócio.
 
               <a
-                class="text-WHITE text-body18 md:text-body14 underline-offset-1 mt-2 flex items-center gap-2 hover:gap-4 transition-all"
+                class="text-WHITE text-body20 underline-offset-1 mt-2 flex items-center gap-2 hover:gap-4 transition-all"
                 href="#fale-com-a-gente"
                 >Falar com especialista<iconify-icon
-                  class="text-body14 text-WHITE"
+                  class="text-body16 text-WHITE"
                   icon="solar:alt-arrow-right-line-duotone"
                 ></iconify-icon
               ></a>
