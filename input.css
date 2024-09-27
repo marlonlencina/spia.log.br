@@ -186,3 +186,85 @@ body {
     transform: translateX(0); /* End at the original position */
   }
 }
+
+
+/* intersect */
+.intersect {
+  overflow: hidden !important;
+  transition: 0.25s;
+}
+
+.intersect-transition-25 {
+  transition: 0.25s all;
+}
+.intersect-transition-40 {
+  transition: 0.4s all;
+}
+.intersect-transition-60 {
+  transition: 0.6s all;
+}
+.intersect-transition-80 {
+  transition: 0.8s all;
+}
+.intersect-transition-100 {
+  transition: 1s all;
+}
+
+.intersect-hidden {
+  opacity: 0 !important;
+}
+
+.intersect-show {
+  opacity: 1 !important;
+}
+
+.intersect-child:nth-child(2) {
+  transition-delay: 200ms !important;
+}
+
+.intersect-child:nth-child(3) {
+  transition-delay: 400ms !important;
+}
+
+.intersect-child:nth-child(4) {
+  transition-delay: 600ms !important;
+}
+
+/* from bottom */
+
+.intersect-hidden.intersect-animate-bottom {
+  transform: translateY(10%);
+}
+
+.intersect-show.intersect-animate-bottom {
+  transform: translateY(0%);
+}
+
+/* from right */
+
+.intersect-hidden.intersect-animate-right {
+  transform: translateX(25%);
+}
+
+.intersect-show.intersect-animate-right {
+  transform: translateX(0%);
+}
+
+/* from left */
+
+.intersect-hidden.intersect-animate-left {
+  transform: translateX(-25%);
+}
+
+.intersect-show.intersect-animate-left {
+  transform: translateX(0%);
+}
+
+/* from top */
+
+.intersect-hidden.intersect-animate-top {
+  transform: translateY(-25%);
+}
+.intersect-show.intersect-animate-top {
+  transform: translateY(0%);
+}

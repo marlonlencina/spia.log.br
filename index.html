@@ -42,7 +42,7 @@
     <link rel="manifest" href="/assets/favicon//site.webmanifest" />
   </head>
   <body>
-    <header class="w-full h-[96px]">
+    <header id="header" class="w-full h-[96px]">
       <div
         class="bg-BLACK h-[96px] w-full fixed top-0 left-0 right-0 z-[99999]"
       >
@@ -300,10 +300,10 @@
       </div>
     </main>
 
-    <section class="max-w-[1248px] w-full px-4 mx-auto pt-[84px] pb-[124px]">
+    <section class="max-w-[1248px] w-full px-4 mx-auto mt-[84px] pb-[124px]">
       <div class="w-full grid md:grid-cols-3 gap-8">
         <div
-          class="bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
+          class="intersect intersect-hidden intersect-animate-bottom intersect-transition-40 bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
         >
           <div class="w-full flex items-center justify-center gap-3">
             <iconify-icon
@@ -321,7 +321,7 @@
           </p>
         </div>
         <div
-          class="bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
+          class="intersect intersect-hidden intersect-animate-bottom intersect-transition-40 bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
         >
           <div class="w-full flex items-center justify-center gap-3">
             <iconify-icon
@@ -339,7 +339,7 @@
           </p>
         </div>
         <div
-          class="bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
+          class="intersect intersect-hidden intersect-animate-bottom intersect-transition-40 bg-GRAY_800 w-full rounded-lg h-[284px] flex flex-col items-center justify-center p-6 hover:-translate-y-1 transition-all border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10"
         >
           <div class="w-full flex items-center justify-center gap-3">
             <iconify-icon
@@ -511,7 +511,7 @@
         </div>
       </div>
       <div class="margin-container-left mt-16 px-4 md:px-0">
-        <div class="swiper h-[240px] w-full relative">
+        <div class="swiper h-[296px] md:h-[240px] w-full relative">
           <div class="swiper-wrapper">
             <div
               class="swiper-slide w-full p-8 rounded-lg border-[1px] border-WHITE border-opacity-5 hover:border-opacity-10 transition-all"
@@ -1732,15 +1732,17 @@
         <div
           class="w-full pt-[124px] flex flex-col md:flex-row md:justify-between md:items-center"
         >
-          <div>
-            <p class="font-BODY text-WHITE text-body16 font-normal">
+          <div class="order-last md:order-1 mt-12 md:mt-0">
+            <p
+              class="text-center md:text-start font-BODY text-WHITE text-body16 font-normal"
+            >
               Todos direitos da páginas são reservados a SPIA.log® 2024
             </p>
           </div>
-          <div>
+          <div class="">
             <button
               id="return-to-top-btn"
-              class="h-16 w-16 bg-WHITE bg-opacity-5 rounded-md grid place-content-center hover:bg-opacity-10 transition-all mt-12 md:mt-0"
+              class="h-16 w-16 bg-WHITE bg-opacity-5 rounded-md grid place-content-center hover:bg-opacity-10 transition-all"
             >
               <iconify-icon
                 class="text-body16 text-WHITE"
@@ -1780,5 +1782,7 @@
         },
       });
     </script>
+
+    <script src="./intersect.js"></script>
   </body>
 </html>

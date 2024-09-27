@@ -672,6 +672,10 @@ video {
   order: -9999;
 }
 
+.order-last {
+  order: 9999;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -733,6 +737,10 @@ video {
   margin-top: 80px;
 }
 
+.mt-\[84px\] {
+  margin-top: 84px;
+}
+
 .flex {
   display: flex;
 }
@@ -769,16 +777,16 @@ video {
   height: 216px;
 }
 
-.h-\[240px\] {
-  height: 240px;
-}
-
 .h-\[256px\] {
   height: 256px;
 }
 
 .h-\[284px\] {
   height: 284px;
+}
+
+.h-\[296px\] {
+  height: 296px;
 }
 
 .h-\[2px\] {
@@ -927,10 +935,6 @@ video {
   cursor: pointer;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -1068,10 +1072,6 @@ video {
 .border-t-WHITE {
   --tw-border-opacity: 1;
   border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-opacity-0 {
-  --tw-border-opacity: 0;
 }
 
 .border-opacity-5 {
@@ -1381,15 +1381,6 @@ video {
   font-size: 0.875rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-sm10 {
-  font-size: 0.625rem;
-}
-
 .font-light {
   font-weight: 300;
 }
@@ -1679,6 +1670,93 @@ body {
   }
 }
 
+/* intersect */
+
+.intersect {
+  overflow: hidden !important;
+  transition: 0.25s;
+}
+
+.intersect-transition-25 {
+  transition: 0.25s all;
+}
+
+.intersect-transition-40 {
+  transition: 0.4s all;
+}
+
+.intersect-transition-60 {
+  transition: 0.6s all;
+}
+
+.intersect-transition-80 {
+  transition: 0.8s all;
+}
+
+.intersect-transition-100 {
+  transition: 1s all;
+}
+
+.intersect-hidden {
+  opacity: 0 !important;
+}
+
+.intersect-show {
+  opacity: 1 !important;
+}
+
+.intersect-child:nth-child(2) {
+  transition-delay: 200ms !important;
+}
+
+.intersect-child:nth-child(3) {
+  transition-delay: 400ms !important;
+}
+
+.intersect-child:nth-child(4) {
+  transition-delay: 600ms !important;
+}
+
+/* from bottom */
+
+.intersect-hidden.intersect-animate-bottom {
+  transform: translateY(10%);
+}
+
+.intersect-show.intersect-animate-bottom {
+  transform: translateY(0%);
+}
+
+/* from right */
+
+.intersect-hidden.intersect-animate-right {
+  transform: translateX(25%);
+}
+
+.intersect-show.intersect-animate-right {
+  transform: translateX(0%);
+}
+
+/* from left */
+
+.intersect-hidden.intersect-animate-left {
+  transform: translateX(-25%);
+}
+
+.intersect-show.intersect-animate-left {
+  transform: translateX(0%);
+}
+
+/* from top */
+
+.intersect-hidden.intersect-animate-top {
+  transform: translateY(-25%);
+}
+
+.intersect-show.intersect-animate-top {
+  transform: translateY(0%);
+}
+
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1700,10 +1778,6 @@ body {
 
 .hover\:border-opacity-10:hover {
   --tw-border-opacity: 0.1;
-}
-
-.hover\:border-opacity-5:hover {
-  --tw-border-opacity: 0.05;
 }
 
 .hover\:bg-BLUE_HOVER:hover {
@@ -1768,6 +1842,10 @@ body {
     bottom: 0px;
   }
 
+  .md\:order-1 {
+    order: 1;
+  }
+
   .md\:order-2 {
     order: 2;
   }
@@ -1794,6 +1872,10 @@ body {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[240px\] {
+    height: 240px;
   }
 
   .md\:h-\[256px\] {
@@ -1940,12 +2022,12 @@ body {
     font-size: 2.5rem;
   }
 
-  .md\:text-sm14 {
-    font-size: 0.875rem;
-  }
-
   .md\:text-head48 {
     font-size: 3rem;
+  }
+
+  .md\:text-sm14 {
+    font-size: 0.875rem;
   }
 
   .md\:text-opacity-100 {
