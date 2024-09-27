@@ -1047,15 +1047,6 @@ video {
   gap: 6px;
 }
 
-.gap-y-12 {
-  row-gap: 3rem;
-}
-
-.gap-x-8 {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1446,10 +1437,6 @@ video {
 
 .text-start {
   text-align: start;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .font-BODY {
@@ -1983,6 +1970,10 @@ body {
   opacity: 0.85;
 }
 
+.hover\:opacity-0:hover {
+  opacity: 0;
+}
+
 .group:hover .group-hover\:top-20 {
   top: 5rem;
 }
@@ -2095,10 +2086,6 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2201,10 +2188,6 @@ body {
 
   .md\:text-head48 {
     font-size: 3rem;
-  }
-
-  .md\:text-sm14 {
-    font-size: 0.875rem;
   }
 
   .md\:font-light {
