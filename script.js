@@ -350,5 +350,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initial update and start the interval
   updateSlide();
-  slideInterval = setInterval(updateSlide, 8000);
+  slideInterval = setInterval(updateSlide, 12000);
 });
