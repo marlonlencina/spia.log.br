@@ -660,6 +660,10 @@ video {
   top: 88px;
 }
 
+.top-\[px\] {
+  top: px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1981,10 +1985,6 @@ body {
 
 .group:hover .group-hover\:text-opacity-25 {
   --tw-text-opacity: 0.25;
-}
-
-.group:hover .group-hover\:text-opacity-45 {
-  --tw-text-opacity: 0.45;
 }
 
 @media (min-width: 640px) {
