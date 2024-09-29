@@ -289,13 +289,13 @@
     </header>
 
     <main
-      class="max-w-[1248px] px-4 mx-auto w-full py-[72px] md:pt-0 md:h-[calc(100vh_-_72px)] flex flex-col justify-center items-center bg-BLACK"
+      class="max-w-[1248px] px-4 mx-auto w-full py-[72px] md:pt-0 h-[calc(100vh_-_72px)] flex flex-col justify-center items-center bg-BLACK"
     >
       <div id="container-hero-content" class="md:h-[400px]"></div>
 
       <div
         id="stats"
-        class="hidden w-full flex flex-col md:flex-row items-center gap-4 md:gap-8 md:h-[256px] rounded-lg mt-[64px] md:mt-[128px] overflow-hidden md:overflow-visible"
+        class="w-full flex flex-col md:flex-row items-center gap-4 md:gap-8 md:h-[256px] rounded-lg mt-[64px] md:mt-[128px] overflow-hidden md:overflow-visible"
       >
         <div
           id="container-card-price"
@@ -433,7 +433,9 @@
               class="text-head24 text-BLUE_PRIMARY"
               icon="solar:map-linear"
             ></iconify-icon>
-            <h2 class="font-BODY text-head32 text-WHITE font-normal mt-2">
+            <h2
+              class="font-BODY text-head24 md:text-head32 text-WHITE font-normal mt-2"
+            >
               +<span id="nrotas">0</span>
               Milhões de rotas
             </h2>
@@ -453,7 +455,9 @@
               class="text-head24 text-BLUE_PRIMARY"
               icon="solar:compass-linear"
             ></iconify-icon>
-            <h2 class="font-BODY text-head32 text-WHITE font-normal mt-2">
+            <h2
+              class="font-BODY text-head24 md:text-head32 text-WHITE font-normal mt-2"
+            >
               +<span id="nprecisao">0</span>% de precisão
             </h2>
           </div>
@@ -472,7 +476,9 @@
               class="text-head24 text-BLUE_PRIMARY"
               icon="solar:routing-2-linear"
             ></iconify-icon>
-            <h2 class="font-BODY text-head32 text-WHITE font-normal mt-2">
+            <h2
+              class="font-BODY text-head24 md:text-head32 text-WHITE font-normal mt-2"
+            >
               <span id="nhoras">0</span>/7 Disponível
             </h2>
           </div>
@@ -959,7 +965,9 @@
 
         <div class="mt-16 w-full">
           <table class="hidden md:table w-full relative border-collapse">
-            <div class="h-4 bg-GRAY_700 w-full z-[98] sticky top-[72px]"></div>
+            <div
+              class="hidden md:block h-4 bg-GRAY_700 w-full z-[98] sticky top-[72px]"
+            ></div>
 
             <thead class="sticky top-[88px]">
               <tr>
@@ -1480,7 +1488,17 @@
 
             <div class="container-table"></div>
 
-            <div class="table-footer flex items-center h-[72px] mt-[72px]">
+            <div class="px-4 h-[72px] flex items-center gap-4">
+              <span
+                class="font-BODY text-WHITE text-opacity-45 font-light text-body16"
+                >Contrate</span
+              >
+              <p class="font-BODY text-WHITE font-normal text-body16">
+                Entre em contato
+              </p>
+            </div>
+
+            <div class="table-footer flex items-center h-[72px]">
               <a
                 href="#fale-com-a-gente"
                 class="w-full bg-BLUE_OPACITY_TABLE bg-opacity-45 grid place-content-center h-[72px] hover:bg-opacity-20 transition-all cursor-pointer"

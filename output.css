@@ -761,6 +761,10 @@ video {
   margin-top: 84px;
 }
 
+.mt-\[32px\] {
+  margin-top: 32px;
+}
+
 .flex {
   display: flex;
 }
@@ -860,6 +864,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[calc\(100vh_-_72px\)\] {
+  height: calc(100vh - 72px);
 }
 
 .w-12 {
@@ -1994,6 +2002,10 @@ body {
     margin-top: 128px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2160,6 +2172,10 @@ body {
 
   .md\:text-head48 {
     font-size: 3rem;
+  }
+
+  .md\:text-head32 {
+    font-size: 2rem;
   }
 
   .md\:font-light {

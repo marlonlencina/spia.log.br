@@ -140,7 +140,7 @@ function updateCardContent() {
               </div>
             </div>
           </div>
-          <div class="w-full p-6 h-[256px]">
+          <div class="hidden md:block w-full p-6 h-[256px]">
             <div class="flex flex-col w-full relative overflow-hidden">
               <div>
                 <p class="font-BODY text-WHITE font-light text-body18">
