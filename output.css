@@ -749,20 +749,12 @@ video {
   margin-top: 64px;
 }
 
-.mt-\[72px\] {
-  margin-top: 72px;
-}
-
 .mt-\[80px\] {
   margin-top: 80px;
 }
 
 .mt-\[84px\] {
   margin-top: 84px;
-}
-
-.mt-\[32px\] {
-  margin-top: 32px;
 }
 
 .flex {
@@ -849,13 +841,12 @@ video {
   height: 84px;
 }
 
-.h-auto {
-  height: auto;
+.h-\[calc\(100vh_-_72px\)\] {
+  height: calc(100vh - 72px);
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -864,10 +855,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[calc\(100vh_-_72px\)\] {
-  height: calc(100vh - 72px);
 }
 
 .w-12 {
@@ -1641,7 +1628,6 @@ body {
 }
 
 #sidebar {
-  background-color: #040404;
   transform: translateY(-100%);
   transition: all 0.25s ease;
   opacity: 0;
@@ -2046,10 +2032,6 @@ body {
     height: 72px;
   }
 
-  .md\:h-\[calc\(100vh_-_72px\)\] {
-    height: calc(100vh - 72px);
-  }
-
   .md\:h-full {
     height: 100%;
   }
@@ -2166,16 +2148,16 @@ body {
     font-size: 1.5rem;
   }
 
+  .md\:text-head32 {
+    font-size: 2rem;
+  }
+
   .md\:text-head40 {
     font-size: 2.5rem;
   }
 
   .md\:text-head48 {
     font-size: 3rem;
-  }
-
-  .md\:text-head32 {
-    font-size: 2rem;
   }
 
   .md\:font-light {
