@@ -368,7 +368,7 @@ const observerCallback = (entries, observer) => {
       }
       if (entry.target.id === "nprecisao-container") {
         const precisao = document.getElementById("nprecisao");
-        animateValue(precisao, 0, 91, 5000); // Trigger animation for #nprecisao-container
+        animateValue(precisao, 0, 96, 5000); // Trigger animation for #nprecisao-container
       }
       if (entry.target.id === "nhoras-container") {
         const horas = document.getElementById("nhoras");
