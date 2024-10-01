@@ -745,6 +745,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-\[124px\] {
+  margin-top: 124px;
+}
+
 .mt-\[64px\] {
   margin-top: 64px;
 }
@@ -755,14 +759,6 @@ video {
 
 .mt-\[84px\] {
   margin-top: 84px;
-}
-
-.mt-\[12\] {
-  margin-top: 12;
-}
-
-.mt-\[124px\] {
-  margin-top: 124px;
 }
 
 .flex {
@@ -791,6 +787,10 @@ video {
 
 .h-4 {
   height: 1rem;
+}
+
+.h-\[120px\] {
+  height: 120px;
 }
 
 .h-\[124px\] {
@@ -845,10 +845,6 @@ video {
   height: 72px;
 }
 
-.h-\[84px\] {
-  height: 84px;
-}
-
 .h-auto {
   height: auto;
 }
@@ -859,10 +855,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[120px\] {
-  height: 120px;
 }
 
 .w-12 {
@@ -887,10 +879,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[120px\] {
-  width: 120px;
 }
 
 .max-w-\[1248px\] {
@@ -925,6 +913,10 @@ video {
   max-width: 524px;
 }
 
+.max-w-\[546px\] {
+  max-width: 546px;
+}
+
 .max-w-\[564px\] {
   max-width: 564px;
 }
@@ -951,26 +943,6 @@ video {
 
 .max-w-\[800px\] {
   max-width: 800px;
-}
-
-.max-w-\[264px\] {
-  max-width: 264px;
-}
-
-.max-w-\[\] {
-  max-width: ;
-}
-
-.max-w-\[244px\] {
-  max-width: 244px;
-}
-
-.max-w-\[54\] {
-  max-width: 54;
-}
-
-.max-w-\[546px\] {
-  max-width: 546px;
 }
 
 .flex-1 {
@@ -1217,11 +1189,6 @@ video {
   background-color: GRAY 800;
 }
 
-.bg-\[\#1E1E1E\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
@@ -1411,11 +1378,6 @@ video {
   padding-bottom: 72px;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -1432,6 +1394,10 @@ video {
   padding-bottom: 84px;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1446,10 +1412,6 @@ video {
 
 .pt-\[280px\] {
   padding-top: 280px;
-}
-
-.pt-12 {
-  padding-top: 3rem;
 }
 
 .text-center {
@@ -2096,18 +2058,6 @@ body {
 
   .md\:max-w-\[488px\] {
     max-width: 488px;
-  }
-
-  .md\:max-w-\[348px\] {
-    max-width: 348px;
-  }
-
-  .md\:max-w-\[312px\] {
-    max-width: 312px;
-  }
-
-  .md\:max-w-\[264px\] {
-    max-width: 264px;
   }
 
   .md\:max-w-full {
